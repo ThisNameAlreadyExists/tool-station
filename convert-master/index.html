@@ -1,0 +1,1659 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="92JhxZrd6uqTRRzSTriBol">
+<head data-page-node-id="ED498yITshRTbtIPqWFz32">
+<meta charset="UTF-8" data-page-node-id="PwTMJiQmQ6CZ9vqBRaiY4M">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="XG923N6YlMVE8qPCdmaJ3p">
+<title data-i18n="title">转换大师 · 一站式本地文件转换工具</title>
+<meta name="description" data-i18n="desc" content="免费在线文件转换：图片、PDF、Word、文本、数据格式互转。所有文件本地处理，不上传服务器，隐私安全。" data-page-node-id="NYdZqYPOXHDFFgdfs0WR9E">
+<meta name="keywords" content="文件转换,格式转换,图片转换,PDF转换,Word转换,OCR文字识别,在线工具,免费工具,本地处理,隐私安全,file converter,image converter,pdf converter,ocr">
+<meta name="author" content="ConvertMaster">
+<meta name="robots" content="index, follow">
+<meta name="language" content="zh-CN, en">
+<meta property="og:type" content="website">
+<meta property="og:title" content="转换大师 · 一站式本地文件转换工具">
+<meta property="og:description" content="免费在线文件转换：图片、PDF、Word、文本、数据格式互转。OCR文字识别。所有文件本地处理，隐私安全。">
+<meta property="og:site_name" content="ConvertMaster">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="转换大师 · 一站式本地文件转换工具">
+<meta name="twitter:description" content="免费在线文件转换：图片、PDF、Word、OCR。本地处理，隐私安全。">
+<link rel="canonical" href="https://tools.sanzhigouzi.com/convert-master/">
+<link rel="alternate" hreflang="en" href="https://tools.sanzhigouzi.com/convert-master/">
+<link rel="alternate" hreflang="zh-CN" href="https://tools.sanzhigouzi.com/convert-master/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sanzhigouzi.com/convert-master/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b5cff'/%3E%3Ctext x='32' y='44' font-size='38' font-family='Arial,sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+<meta property="og:url" content="https://tools.sanzhigouzi.com/convert-master/">
+<meta property="og:image" content="https://tools.sanzhigouzi.com/convert-master/og-image.png">
+<meta name="twitter:image" content="https://tools.sanzhigouzi.com/convert-master/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "转换大师 ConvertMaster",
+  "description": "一站式本地文件转换工具，支持图片、PDF、Word、文本、数据格式互转及OCR文字识别。所有处理在浏览器本地完成，隐私零泄露。",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any (Web Browser)",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+  "featureList": ["图片格式转换", "PDF转图片/文本", "Word转HTML/TXT", "OCR文字识别", "多格式对比", "可视化工作流", "元数据自动清除"],
+  "inLanguage": ["zh-CN", "en"]
+}
+</script>
+<style>
+  :root{
+    --ink:#1a2233; --ink-2:#4a5568; --ink-3:#8b93a7;
+    --bg:#f5f7fb; --card:#ffffff; --line:#e6e9f0;
+    --brand:#2b5cff; --brand-2:#5a7dff; --brand-soft:#eef3ff;
+    --green:#0e9f6e; --green-soft:#e6f7f1;
+    --amber:#c27803; --amber-soft:#fdf3e3;
+    --red:#d0342c; --red-soft:#fdeceb;
+    --purple:#7048c8; --purple-soft:#f1ecfb;
+    --shadow:0 4px 16px rgba(20,40,80,.06);
+    --shadow-lg:0 12px 32px rgba(20,40,80,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html,body{height:100%}
+  body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;font-size:15px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink)}
+  .logo .mark{width:32px;height:32px;background:linear-gradient(135deg,#2b5cff,#5a7dff);border-radius:8px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px}
+  .nav-right{display:flex;align-items:center;gap:14px}
+  .nav-links{display:flex;gap:24px;font-size:14px}
+  .nav-links a{color:var(--ink-2);text-decoration:none;transition:color .2s}
+  .nav-links a:hover{color:var(--brand)}
+  .badge{font-size:11.5px;background:var(--green-soft);color:var(--green);padding:3px 10px;border-radius:999px;font-weight:600}
+  .privacy-dot{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--green);font-weight:600}
+  .privacy-dot .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px var(--green-soft);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 3px var(--green-soft)}50%{box-shadow:0 0 0 6px var(--green-soft)}}
+  .lang-switch{display:flex;align-items:center;background:#f0f3f9;border:1px solid var(--line);border-radius:999px;padding:2px;font-size:13px}
+  .lang-switch button{background:transparent;border:none;padding:5px 12px;border-radius:999px;cursor:pointer;color:var(--ink-3);font-weight:600;transition:all .15s;font-family:inherit}
+  .lang-switch button.active{background:var(--brand);color:#fff}
+  @media(max-width:640px){.nav-links{display:none}.privacy-dot{display:none}}
+  .hero{text-align:center;padding:36px 0 20px}
+  .hero h1{font-size:34px;font-weight:800;letter-spacing:-.5px;margin-bottom:14px;background:linear-gradient(135deg,#1a2233 0%,#2b5cff 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .hero p{color:var(--ink-2);font-size:16px;max-width:640px;margin:0 auto 20px}
+  .hero .features{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+  .hero .feat{font-size:13px;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:999px;color:var(--ink-2);box-shadow:var(--shadow)}
+  .hero .feat b{color:var(--green)}
+  @media(max-width:640px){.hero h1{font-size:26px}.hero p{font-size:14px}}
+  .mode-tabs{display:flex;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:10px;padding:4px;margin:8px auto 20px;width:fit-content}
+  .mode-tabs button{background:transparent;border:none;padding:8px 18px;border-radius:8px;cursor:pointer;color:var(--ink-2);font-weight:600;font-size:14px;transition:all .15s;font-family:inherit}
+  .mode-tabs button.active{background:var(--brand);color:#fff;box-shadow:var(--shadow)}
+  .upload-zone{display:flex;flex-direction:column;align-items:center;justify-content:center;background:var(--card);border:2px dashed var(--line);border-radius:16px;padding:48px 24px;text-align:center;cursor:pointer;transition:all .25s;margin:8px 0 24px;position:relative;overflow:hidden}
+  .upload-zone:hover{border-color:var(--brand);background:var(--brand-soft)}
+  .upload-zone.dragover{border-color:var(--brand);background:var(--brand-soft);transform:scale(1.01);box-shadow:var(--shadow-lg)}
+  .upload-zone .icon{font-size:42px;margin-bottom:10px;color:var(--brand)}
+  .upload-zone h3{font-size:17px;font-weight:700;margin-bottom:6px}
+  .upload-zone p{color:var(--ink-3);font-size:13px;margin-bottom:14px;max-width:480px}
+  .upload-btn{display:inline-block;background:var(--brand);color:#fff;border:none;padding:10px 28px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
+  .upload-btn:hover{background:#1f47e0;transform:translateY(-1px)}
+  .upload-zone .hint{margin-top:14px;font-size:12px;color:var(--ink-3)}
+  .upload-zone input[type=file]{display:none}
+  .section{margin:24px 0}
+  .section h2{font-size:16px;font-weight:700;margin-bottom:12px;display:flex;align-items:center;gap:8px;color:var(--ink);flex-wrap:wrap}
+  .section h2 .count{font-size:12px;background:var(--brand-soft);color:var(--brand);padding:2px 8px;border-radius:999px;font-weight:600}
+  .section h2 .sub{font-size:12px;color:var(--ink-3);font-weight:400}
+  .file-list{display:grid;gap:10px}
+  .file-item{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;grid-template-columns:42px 1fr auto;gap:14px;align-items:center;box-shadow:var(--shadow)}
+  .file-item.processing{border-color:var(--brand);background:linear-gradient(90deg,var(--brand-soft) 0%,var(--card) 50%)}
+  .file-item.done{border-color:var(--green);background:var(--green-soft)}
+  .file-item.error{border-color:var(--red);background:var(--red-soft)}
+  .file-icon{width:42px;height:42px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0}
+  .ic-img{background:linear-gradient(135deg,#0e9f6e,#10c98a)}
+  .ic-pdf{background:linear-gradient(135deg,#d0342c,#ff5a52)}
+  .ic-doc{background:linear-gradient(135deg,#2b5cff,#5a7dff)}
+  .ic-txt{background:linear-gradient(135deg,#6b7280,#9ca3af)}
+  .ic-csv{background:linear-gradient(135deg,#c27803,#f5a623)}
+  .ic-json{background:linear-gradient(135deg,#7048c8,#9061f9)}
+  .ic-md{background:linear-gradient(135deg,#0d9488,#14b8a6)}
+  .ic-unk{background:linear-gradient(135deg,#4a5568,#718096)}
+  .file-meta{min-width:0}
+  .file-name{font-weight:600;font-size:14px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .file-info{font-size:12px;color:var(--ink-3);margin-top:2px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+  .file-info .badge-sm{font-size:10.5px;padding:1px 7px;border-radius:999px;background:#f0f3f9;color:var(--ink-3)}
+  .file-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+  .conv-select{background:#f0f3f9;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13px;color:var(--ink);cursor:pointer;max-width:170px}
+  .conv-select:focus{outline:none;border-color:var(--brand)}
+  .btn-sm{background:var(--brand);color:#fff;border:none;padding:7px 14px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
+  .btn-sm:hover{background:#1f47e0}
+  .btn-sm:disabled{background:#cbd5e0;cursor:not-allowed}
+  .btn-ghost{background:transparent;color:var(--ink-3);border:1px solid var(--line);padding:6px 10px;border-radius:6px;font-size:13px;cursor:pointer}
+  .btn-ghost:hover{color:var(--red);border-color:var(--red)}
+  @media(max-width:640px){
+    .file-item{grid-template-columns:42px 1fr;grid-template-rows:auto auto}
+    .file-actions{grid-column:1 / -1;justify-content:flex-end;flex-wrap:wrap}
+    .conv-select{max-width:none;flex:1;min-width:120px}
+  }
+  .progress-wrap{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin:14px 0;display:none}
+  .progress-wrap.active{display:block}
+  .progress-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;gap:12px}
+  .progress-head .lbl{font-size:14px;font-weight:600;color:var(--ink);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .progress-head .pct{font-size:13px;color:var(--brand);font-weight:700;flex-shrink:0}
+  .progress-bar{height:8px;background:#eef1f7;border-radius:999px;overflow:hidden}
+  .progress-fill{height:100%;background:linear-gradient(90deg,#2b5cff,#5a7dff);border-radius:999px;transition:width .25s;width:0%}
+  .progress-fill.done{background:linear-gradient(90deg,#0e9f6e,#10c98a)}
+  .progress-fill.error{background:linear-gradient(90deg,#d0342c,#ff5a52)}
+  .result-section{display:none}
+  .result-section.active{display:block}
+  .result-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:12px;box-shadow:var(--shadow)}
+  .result-card .rhead{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;flex-wrap:wrap;gap:10px}
+  .result-card .rtitle{font-size:15px;font-weight:700;color:var(--ink);display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .result-card .rtitle .arrow{color:var(--ink-3)}
+  .result-card .rmeta{font-size:12px;color:var(--ink-3);display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .result-card .rmeta .save{color:var(--green);font-weight:600}
+  .btn-download{background:var(--green);color:#fff;border:none;padding:10px 20px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:all .2s;text-decoration:none}
+  .btn-download:hover{background:#0a8058;transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+  .btn-line{background:transparent;color:var(--brand);border:1px solid var(--brand);padding:9px 16px;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer}
+  .btn-line:hover{background:var(--brand-soft)}
+  .preview-box{background:#fafbff;border:1px solid var(--line);border-radius:8px;padding:16px;margin-top:12px;max-height:500px;overflow:auto;text-align:center}
+  .preview-box img{max-width:100%;height:auto;border-radius:6px;box-shadow:var(--shadow)}
+  .preview-box .pdf-page{margin-bottom:12px}
+  .preview-box .pdf-page img{box-shadow:0 2px 8px rgba(0,0,0,.1)}
+  .preview-box .text-out{font-family:Consolas,Menlo,monospace;font-size:12.5px;text-align:left;white-space:pre-wrap;word-break:break-word;color:var(--ink-2);max-height:400px;overflow:auto}
+  .preview-box .html-out{text-align:left;font-size:14px;line-height:1.7;color:var(--ink-2)}
+  .preview-box .html-out h1,.preview-box .html-out h2,.preview-box .html-out h3{margin:10px 0 6px;color:var(--ink)}
+  .preview-box .html-out p{margin:6px 0}
+  .preview-box .html-out table{border-collapse:collapse;width:100%;margin:8px 0}
+  .preview-box .html-out td,.preview-box .html-out th{border:1px solid var(--line);padding:6px 10px;font-size:13px}
+  .preview-empty{color:var(--ink-3);font-size:13px;padding:30px}
+  .compare-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:13px}
+  .compare-table th{background:#f0f3f9;padding:8px 10px;text-align:left;font-weight:700}
+  .compare-table td{padding:8px 10px;border-bottom:1px solid var(--line)}
+  .compare-table .recommend{background:var(--green-soft);color:var(--green);font-weight:700}
+  #toast-host{position:fixed;top:80px;right:20px;z-index:1000;display:flex;flex-direction:column;gap:10px;max-width:340px}
+  .toast{background:var(--card);border-left:4px solid var(--brand);border-radius:8px;padding:12px 16px;box-shadow:var(--shadow-lg);font-size:13.5px;color:var(--ink);display:flex;align-items:flex-start;gap:10px;animation:slidein .25s ease}
+  .toast.success{border-color:var(--green)}
+  .toast.warn{border-color:var(--amber)}
+  .toast.error{border-color:var(--red)}
+  .toast .ticon{font-size:16px;flex-shrink:0}
+  .toast .tmsg{flex:1;line-height:1.5}
+  @keyframes slidein{from{transform:translateX(100%);opacity:0}to{transform:translateX(0);opacity:1}}
+  footer{margin-top:60px;padding:30px 0;text-align:center;color:var(--ink-3);font-size:12.5px;border-top:1px solid var(--line)}
+  footer a{color:var(--brand);text-decoration:none}
+  .toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+  .toolbar .btn-tool{background:var(--card);border:1px solid var(--line);padding:7px 14px;border-radius:8px;font-size:13px;color:var(--ink-2);cursor:pointer;transition:all .15s}
+  .toolbar .btn-tool:hover{border-color:var(--brand);color:var(--brand)}
+  .empty-state{text-align:center;padding:40px 20px;color:var(--ink-3);font-size:14px}
+  .empty-state .eicon{font-size:38px;margin-bottom:8px;opacity:.5}
+  .workflow-area{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin:14px 0}
+  .wf-steps{display:flex;flex-direction:column;gap:10px;margin:14px 0}
+  .wf-step{display:grid;grid-template-columns:36px 1fr auto;gap:12px;align-items:center;background:#fafbff;border:1px solid var(--line);border-radius:8px;padding:10px 14px;cursor:grab;transition:all .15s}
+  .wf-step:hover{border-color:var(--brand);background:var(--brand-soft)}
+  .wf-step.dragging{opacity:.4;border-style:dashed}
+  .wf-step .drag-handle{color:var(--ink-3);font-size:18px;cursor:grab;user-select:none}
+  .wf-step .step-body{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .wf-step .step-num{width:24px;height:24px;border-radius:50%;background:var(--brand);color:#fff;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+  .wf-step .step-type{background:#f0f3f9;border:1px solid var(--line);border-radius:6px;padding:5px 10px;font-size:12.5px;color:var(--ink)}
+  .wf-step .step-del{background:transparent;border:none;color:var(--ink-3);cursor:pointer;font-size:14px;padding:4px 8px;border-radius:4px}
+  .wf-step .step-del:hover{color:var(--red)}
+  .wf-add{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+  .wf-add select{background:#f0f3f9;border:1px solid var(--line);border-radius:6px;padding:6px 10px;font-size:13px}
+  .wf-add button{background:var(--brand);color:#fff;border:none;padding:6px 14px;border-radius:6px;font-size:13px;font-weight:600;cursor:pointer}
+  .wf-run{background:var(--green);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;margin-top:14px}
+  .wf-run:hover{background:#0a8058}
+  .wf-run:disabled{background:#cbd5e0;cursor:not-allowed}
+  .wf-empty{text-align:center;padding:20px;color:var(--ink-3);font-size:13px}
+  .mode-panel{display:none}
+  .mode-panel.active{display:block}
+  /* 反馈浮动按钮 */
+  .feedback-btn{position:fixed;bottom:24px;right:24px;width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#2b5cff,#5a7dff);color:#fff;border:none;font-size:22px;cursor:pointer;box-shadow:0 4px 16px rgba(43,92,255,.35);z-index:90;display:flex;align-items:center;justify-content:center;transition:all .2s}
+  .feedback-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(43,92,255,.45)}
+  /* 反馈模态框 */
+  .feedback-modal{position:fixed;inset:0;background:rgba(20,40,80,.4);z-index:200;display:none;align-items:center;justify-content:center;animation:fadein .2s ease}
+  .feedback-modal.active{display:flex}
+  .feedback-modal .fb-card{background:#fff;border-radius:16px;padding:28px 32px;max-width:420px;width:90%;box-shadow:0 20px 60px rgba(0,0,0,.2);text-align:center}
+  .feedback-modal .fb-icon{font-size:36px;margin-bottom:12px}
+  .feedback-modal .fb-title{font-size:17px;font-weight:700;margin-bottom:8px;color:var(--ink)}
+  .feedback-modal .fb-desc{font-size:14px;color:var(--ink-2);line-height:1.6;margin-bottom:14px}
+  .feedback-modal .fb-email-row{display:flex;align-items:center;gap:8px;justify-content:center;background:#f0f3f9;border-radius:8px;padding:8px 14px;margin-bottom:18px}
+  .feedback-modal .fb-email-text{font-size:13px;color:var(--brand);font-weight:600;word-break:break-all}
+  .feedback-modal .fb-copy{background:var(--brand);color:#fff;border:none;padding:4px 12px;border-radius:6px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
+  .feedback-modal .fb-copy:hover{background:#1f47e0}
+  .feedback-modal .fb-actions{display:flex;gap:10px;justify-content:center}
+  .feedback-modal .fb-confirm{background:var(--green);color:#fff;border:none;padding:10px 24px;border-radius:8px;font-size:14px;font-weight:600;cursor:pointer;transition:all .2s}
+  .feedback-modal .fb-confirm:hover{background:#0a8058}
+  .feedback-modal .fb-cancel{background:transparent;color:var(--ink-3);border:1px solid var(--line);padding:10px 20px;border-radius:8px;font-size:14px;cursor:pointer}
+  @keyframes fadein{from{opacity:0}to{opacity:1}}
+</style>
+</head>
+<body data-page-node-id="93ojU8sZT8rHGckMvw5Sag">
+
+<header class="nav" data-page-node-id="nGs6kCGNPXf4fNHyVjrB86">
+  <div class="wrap nav-inner" data-page-node-id="yYwSdojMIMXBlqxgTBQ5DR">
+    <div class="logo" data-page-node-id="oCh0EZrDb5NXbx4a06alE3">
+      <div class="mark" data-page-node-id="TCMDSSzphrj05Zh5Sl5FCg">⇄</div>
+      <span data-i18n="brand" data-page-node-id="vINxyGgBbug5rxwQdmyHzp">转换大师</span>
+      <span class="privacy-dot" title="本地处理" data-page-node-id="TxEJ6f3f1dJlhQFnVZEVmE"><span class="dot" data-page-node-id="Pr8QLDBu8EoUR6OLuu1wtJ"></span><span data-i18n="privacyOn" data-page-node-id="J8BU15BQdrj7HFlJ89LY9Q">隐私保护</span></span>
+    </div>
+    <div class="nav-right" data-page-node-id="yRkGPHla6fGB1fJvZVNETL">
+      <nav class="nav-links" data-page-node-id="c4uSJInuPnFfplOd5p1yfG">
+        <a href="#upload" data-i18n="navUpload" data-page-node-id="t8YvPnM5Vr3nHfih7xbkIr">上传</a>
+        <a href="#queue" data-i18n="navQueue" data-page-node-id="5dGBFaAhB5j8bjDfoZYCY1">队列</a>
+        <a href="#result" data-i18n="navResult" data-page-node-id="6Ku2hP7kSf4Reg7hluRYPH">结果</a>
+        <a href="#about" data-i18n="navAbout" data-page-node-id="qvrTflVGulpSeZAvF0ArrE">关于</a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language" data-page-node-id="wOL5xCddQWLAVbcb1qHOds">
+        <button id="langZh" type="button" data-page-node-id="b7qdgqhBRc6Sn4iLbDAy2x">中</button>
+        <button id="langEn" type="button" data-page-node-id="nqMAVfg7fFjGhAKTMlmXwd">EN</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap" data-page-node-id="3dpy81EXhJ1EzYbZrR2Eem">
+
+  <section class="hero" data-page-node-id="ycMPUHosEU5qic5soAksK4">
+    <h1 data-i18n="heroTitle" data-page-node-id="cYHDQhYMZEtdnwFS3L1z8g">一站式文件转换工具</h1>
+    <p data-i18n="heroDesc" data-page-node-id="qPN7JsoNqUCCtlvo9vTBec">支持图片、PDF、Word、文本、数据格式的相互转换。所有文件本地浏览器处理，不上传服务器，隐私零泄露。</p>
+    <div class="features" data-page-node-id="vx5JABFtXeMgoH4IwwJZ1E">
+      <span class="feat" data-page-node-id="tykfsAXS8HuPsew4nqwR8i"><b data-page-node-id="SvhCZrm3R2lekIoxr7xflD">●</b> <span data-i18n="featPrivacy" data-page-node-id="mRU8IuBFFH1yDcLzxX7GC3">隐私安全</span></span>
+      <span class="feat" data-page-node-id="x50BMC6daRjXSv2DaErdP4"><b data-page-node-id="zLYo3934mlJx6UlbsKHEKP">●</b> <span data-i18n="featFree" data-page-node-id="45bF4KQlmlxJbzt6Fyi1vu">免费使用</span></span>
+      <span class="feat" data-page-node-id="CojPZ7QTDHHk8lvKghPEKC"><b data-page-node-id="3mPGeZnl0uTCIREnhDgbuo">●</b> <span data-i18n="featNoReg" data-page-node-id="zE5x5Gz5wPWdCzOOnJQimw">无需注册</span></span>
+      <span class="feat" data-page-node-id="pMMxXErEnXEehSkPrAlrQa"><b data-page-node-id="uui1uSFfHGLwY3D59YG855">●</b> <span data-i18n="featMobile" data-page-node-id="Byq10EQxIy7IiXlJ2QAJup">移动端友好</span></span>
+      <span class="feat" data-page-node-id="K9Q0C7y4oCoQd8VIXgBfsn"><b data-page-node-id="6hogJBGJPUL4TunI0WsER4">●</b> <span data-i18n="featBigFile" data-page-node-id="lnbNACSkgYTff23pEuxEcG">支持 100MB 大文件</span></span>
+    </div>
+  </section>
+
+  <div class="mode-tabs" data-page-node-id="rDFlnz0m4dFVhGht62FiSP">
+    <button id="modeSingle" class="active" data-i18n="modeSingle" data-page-node-id="rV7MBNI0QQyCi65abQqven">单文件模式</button>
+    <button id="modeWorkflow" data-i18n="modeWorkflow" data-page-node-id="EJzGHqrGnjWQBqSCRnLk4h">工作流模式</button>
+  </div>
+
+  <div id="panelSingle" class="mode-panel active" data-page-node-id="aXHAoKNHno8qYG46aBQkjz">
+    <section id="upload" data-page-node-id="9SnDBVNZ7AGoGNcoeUoCwX">
+      <label class="upload-zone" id="dropZone" for="fileInput" data-page-node-id="Q7iSlWyoN9nDCHkAzJ0Tmb">
+        <div class="icon" data-page-node-id="tC8rf3Tspgep2O3F1pHAp6">📁</div>
+        <h3 data-i18n="uploadTitle" data-page-node-id="SfBb4v4VibDKIOfmcWmsCi">拖拽文件到这里，或点击选择</h3>
+        <p data-i18n="uploadHint" data-page-node-id="UT2aaPhgVEtfmvndNoNhQ1">支持图片（JPG/PNG/WEBP/BMP/GIF）、PDF、Word（DOCX）、文本（TXT/MD/CSV/JSON）</p>
+        <button type="button" class="upload-btn" onclick="document.getElementById('fileInput').click()" data-i18n="uploadBtn" data-page-node-id="d5vE4cPgZDfBbZsvIA1obN">选择文件</button>
+        <div class="hint" data-i18n="uploadTip" data-page-node-id="7L4yfgJeMSgwKI3H9ZideG">可一次选择多个文件 · 单文件最大 100MB</div>
+        <input type="file" id="fileInput" multiple data-page-node-id="Vy5bwSedJEhClBtB6sIqQ9">
+      </label>
+    </section>
+
+    <section class="section" id="queue" style="display:none" data-page-node-id="dOD8rDpoZZuWbG6L1l6ABJ">
+      <h2 data-page-node-id="FamE1KVKWcxemavc0CIAJD"><span data-i18n="queueTitle" data-page-node-id="gl9xKqI4cc7XWI07gYKufk">文件队列</span> <span class="count" id="queueCount" data-page-node-id="fCF1v7RxA7nWVA4EF3GNLH">0</span> <span class="sub" data-i18n="queueSub" data-page-node-id="QPIVLL4eBiJeYjZURWoN8D">选择目标格式后转换</span></h2>
+      <div class="toolbar" data-page-node-id="4X0opEhqBf84mGfnL49qD7">
+        <button class="btn-tool" onclick="convertAll()" data-i18n="btnConvertAll" data-page-node-id="03jLCpAUrAhONBRIkCMRRK">⚡ 全部转换</button>
+        <button class="btn-tool" onclick="mergeAllPdfs()" data-i18n="btnMergePdf" data-page-node-id="jnDziJqz7qjVXCQD4G13fQ">📑 合并队列中的 PDF</button>
+        <button class="btn-tool" onclick="clearQueue()" data-i18n="btnClearQueue" data-page-node-id="VupbVQLFUGxPd34CjbEhAW">🗑 清空队列</button>
+      </div>
+      <div class="file-list" id="fileList" data-page-node-id="RiNj1ugLfezDlK9LVA1e9w"></div>
+    </section>
+
+    <div class="progress-wrap" id="progressWrap" data-page-node-id="Ph0Npri5GrnMJ0SqXOI1FT">
+      <div class="progress-head" data-page-node-id="Ozoxsq3Jy1RxHimPl60qM9">
+        <span class="lbl" id="progressLabel" data-i18n="progressConverting" data-page-node-id="qKceAoXKkVtMI2UXNqR7Yb">正在转换…</span>
+        <span class="pct" id="progressPct" data-page-node-id="J7AtBbHtODNoeM9hoCZuZg">0%</span>
+      </div>
+      <div class="progress-bar" data-page-node-id="ymvuGH7MXCn9UjBYg3Olgs"><div class="progress-fill" id="progressFill" data-page-node-id="DoEmPp3jZzYRPDTfrDCtbp"></div></div>
+    </div>
+
+    <section class="section result-section" id="result" data-page-node-id="vzfFCffnc4xFT04Omk0XeZ">
+      <h2 data-page-node-id="UzayvyGLREGs9xUBEBUn0i"><span data-i18n="resultTitle" data-page-node-id="wWziftqedgiBtjBwFrtDkr">转换结果</span> <span class="count" id="resultCount" data-page-node-id="auw6e0jDbocAvT1Lb4HRll">0</span></h2>
+      <div class="toolbar" data-page-node-id="ECxja2bQRbHwwc4GDRaBij">
+        <button class="btn-tool" onclick="downloadAll()" data-i18n="btnDownloadAll" data-page-node-id="ZjGw2WmkWsElJmat5VR9IO">⬇ 全部下载</button>
+        <button class="btn-tool" onclick="clearResults()" data-i18n="btnClearResults" data-page-node-id="CHH8IFg26BPq7QKKYNOCb4">✕ 清空结果</button>
+      </div>
+      <div id="resultList" data-page-node-id="d9eUEA0kFR93CI4VSftdHU"></div>
+    </section>
+  </div>
+
+  <div id="panelWorkflow" class="mode-panel" data-page-node-id="PR5Hzkabl5BzAFfHTNCf8H">
+    <section class="section" data-page-node-id="O6P5rFjtSsU1Li0HFFvmDL">
+      <h2 data-page-node-id="jN7kfTIoLz51H5CJyR5gCw"><span data-i18n="wfTitle" data-page-node-id="F1q74WUVyIlCF9zYadANfv">工作流编排</span> <span class="sub" data-i18n="wfSub" data-page-node-id="ptDGHwtRWmCOTMTTKUufk5">串接多步骤，一键执行</span></h2>
+      <div class="workflow-area" data-page-node-id="ycLBlA5fnyzQ2knjLQh9W2">
+        <p style="font-size:13px;color:var(--ink-2);margin-bottom:12px" data-i18n="wfIntro" data-page-node-id="5NXQgjKCTrnmhxcXF8iUQT">先在上方上传文件，然后添加处理步骤。每个步骤会按顺序对队列中的文件执行。可拖拽步骤调整顺序。</p>
+        <div class="wf-steps" id="wfSteps" data-page-node-id="hh90U0aLyob23hJn5IuqeL"></div>
+        <div class="wf-add" data-page-node-id="G69ftWCuxAaqpMuwv4GXqM">
+          <select id="wfAddType" data-page-node-id="Cb4742UzqaFVSNZ3jC9cae">
+            <option value="compress" data-i18n="wfCompress" data-page-node-id="zSyKpLsZ4ax2uwGQGhceQN">压缩图片</option>
+            <option value="toPng" data-i18n="wfToPng" data-page-node-id="i8Jo56si2VufHHrNrUADqH">转 PNG</option>
+            <option value="toJpg" data-i18n="wfToJpg" data-page-node-id="JweMsK2HaoKm95BjdJMvGI">转 JPG</option>
+            <option value="toWebp" data-i18n="wfToWebp" data-page-node-id="nXNXu8cNWkT2hTsqMn5fxn">转 WEBP</option>
+            <option value="toPdf" data-i18n="wfToPdf" data-page-node-id="5mScTBt8Rkz3Ke0GJAGAEZ">转 PDF</option>
+            <option value="pdfToImages" data-i18n="wfPdfToImages" data-page-node-id="3bZi2SVXYRoHLflIpNhULC">PDF 转图片</option>
+            <option value="ocr" data-i18n="wfOcr" data-page-node-id="pimSRfBk0S6Q8DZsDJ5vBA">OCR 识别</option>
+            <option value="clearMeta" data-i18n="wfClearMeta" data-page-node-id="K0H5SADAqNSAygw8fzL0qZ">清除元数据</option>
+          </select>
+          <button onclick="wfAddStep()" data-i18n="wfAddBtn" data-page-node-id="R6xJLyDfJovxWqTjj2ARtx">+ 添加步骤</button>
+        </div>
+        <button class="wf-run" id="wfRunBtn" onclick="wfRun()" data-i18n="wfRun" data-page-node-id="kBTrt0DlnwTkZfheWjXqAG">▶ 执行工作流</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="about" style="margin-top:60px" data-page-node-id="2pqzYHnW7fwG5M9JYc8wg0">
+    <div class="result-card" style="background:linear-gradient(135deg,#eef3ff 0%,#f5f7fb 100%)" data-page-node-id="aG1HYNnZd5LVVl6Dawh30t">
+      <h2 style="border:none;padding:0;margin-bottom:10px" data-i18n="aboutTitle" data-page-node-id="uZb620OYHAEGHuASq9sTvY">关于本工具</h2>
+      <p style="font-size:14px;color:var(--ink-2);line-height:1.8" data-i18n="aboutDesc" data-page-node-id="dCQVL1PBytIS7QzxNjCnxJ">转换大师是一个纯前端文件转换工具，所有处理逻辑运行在你的浏览器中，文件永不离开你的设备。适合处理包含敏感信息的文档（合同、证件、财务报表等），无需担心数据泄露。</p>
+      <h3 style="margin:14px 0 6px;font-size:14px" data-i18n="aboutSupported" data-page-node-id="uSfTFoXw24XrqosFn84kcJ">支持的转换</h3>
+      <ul id="aboutList" style="font-size:13px;color:var(--ink-2);margin-left:20px;line-height:1.9" data-page-node-id="MBUkXsdxBtctYg8vLxyWqw"></ul>
+      <p style="margin-top:12px;font-size:12.5px;color:var(--ink-3)" data-i18n="aboutTip" data-page-node-id="gS82t9wGbj34BOkOgEqX7l">提示：复杂格式（如带特殊字体的 DOCX、加密 PDF）转换效果可能不完美。建议先用小文件测试。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer data-page-node-id="AHVOg2hp8ZH0DepyiKxQgL">
+  <div class="wrap" data-page-node-id="c8frEvPYyZFEj20i7dbxUN">
+    <span data-i18n="footerLine1" data-page-node-id="afkg66cLqFy5hM8nESR3ew">转换大师 · 纯前端本地文件转换工具 · 隐私零泄露 · 免费使用</span><br data-page-node-id="B7XT2NABxAFBWziKLF9b32">
+    <span data-i18n="footerLine2" data-page-node-id="Ep82Zqa7FOg1zJhMMmG2pm">所有处理在浏览器内完成，文件不会上传到任何服务器</span>
+  </div>
+</footer>
+
+<div id="toast-host" data-page-node-id="LlIn4MhxXEWSKATVpo2Zb7"></div>
+
+<!-- 反馈浮动按钮 -->
+<button class="feedback-btn" onclick="showFeedback()" title="反馈" aria-label="反馈">💬</button>
+
+<!-- 反馈模态框 -->
+<div class="feedback-modal" id="feedbackModal" onclick="if(event.target===this) closeFeedback()">
+  <div class="fb-card">
+    <div class="fb-icon">📧</div>
+    <div class="fb-title" id="fbTitle">发送反馈</div>
+    <div class="fb-desc" id="fbDesc">遇到问题或有新需求？点击确认将打开 GitHub Issues 提交反馈。</div>
+    <div class="fb-email-row">
+      <span class="fb-email-text" id="fbEmailText">github.com/ThisNameAlreadyExists/tool-station/issues</span>
+      <button class="fb-copy" onclick="copyFeedbackEmail()" id="fbCopy">复制链接</button>
+    </div>
+    <div class="fb-actions">
+      <button class="fb-confirm" onclick="sendFeedback()" id="fbConfirm">打开 Issues</button>
+      <button class="fb-cancel" onclick="closeFeedback()" id="fbCancel">取消</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* 转换大师 v3 - OCR / 多格式对比 / 可视化工作流（功能融入"支持的转换"，不单独宣传差异化） */
+
+const I18N = {
+  zh: {
+    title:'转换大师 · 一站式本地文件转换工具',
+    desc:'免费在线文件转换：图片、PDF、Word、文本、数据格式互转。所有文件本地处理，不上传服务器，隐私安全。',
+    brand:'转换大师', privacyOn:'隐私保护',
+    navUpload:'上传', navQueue:'队列', navResult:'结果', navAbout:'关于',
+    heroTitle:'一站式文件转换工具',
+    heroDesc:'支持图片、PDF、Word、文本、数据格式的相互转换。所有文件本地浏览器处理，不上传服务器，隐私零泄露。',
+    featPrivacy:'隐私安全', featFree:'免费使用', featNoReg:'无需注册', featMobile:'移动端友好', featBigFile:'支持 100MB 大文件',
+    modeSingle:'单文件模式', modeWorkflow:'工作流模式',
+    uploadTitle:'拖拽文件到这里，或点击选择，或 Ctrl/Cmd+V 粘贴截图',
+    uploadHint:'支持图片（JPG/PNG/WEBP/BMP/GIF）、PDF、Word（DOCX）、文本（TXT/MD/CSV/JSON）',
+    uploadBtn:'选择文件',
+    uploadTip:'可一次选择多个文件 · 单文件最大 100MB',
+    queueTitle:'文件队列', queueSub:'选择目标格式后转换',
+    btnConvertAll:'⚡ 全部转换', btnMergePdf:'📑 合并队列中的 PDF', btnClearQueue:'🗑 清空队列',
+    progressConverting:'正在转换…', progressDone:'完成', progressFailed:'失败',
+    resultTitle:'转换结果', btnDownloadAll:'⬇ 全部下载', btnClearResults:'✕ 清空结果',
+    btnConvert:'转换', btnDownload:'下载',
+    aboutTitle:'关于本工具',
+    aboutDesc:'转换大师是一个纯前端文件转换工具，所有处理逻辑运行在你的浏览器中，文件永不离开你的设备。适合处理包含敏感信息的文档（合同、证件、财务报表等），无需担心数据泄露。',
+    aboutSupported:'支持的转换',
+    aboutTip:'提示：复杂格式（如带特殊字体的 DOCX、加密 PDF）转换效果可能不完美。建议先用小文件测试。',
+    footerLine1:'转换大师 · 纯前端本地文件转换工具 · 隐私零泄露 · 免费使用',
+    footerLine2:'所有处理在浏览器内完成，文件不会上传到任何服务器',
+    labImage:'图片', labPdf:'PDF', labDoc:'Word', labTxt:'文本', labCsv:'CSV', labJson:'JSON', labMd:'Markdown', labHtml:'HTML', labUnknown:'未知',
+    optPng:'→ PNG', optJpg:'→ JPG', optWebp:'→ WEBP',
+    optCompressHigh:'压缩 (高质量)', optCompressMid:'压缩 (中等)', optCompressLow:'压缩 (极致小)',
+    optCompare:'多格式对比输出 (JPG/PNG/WEBP)',
+    optImgToPdf:'→ PDF (单图)', optImgOcr:'OCR 识别为文本', optImgSearchablePdf:'→ 可搜索 PDF (OCR)',
+    optPdfToImages:'→ 图片 (每页)', optPdfToText:'→ 文本提取', optPdfToPng:'→ PNG (首页)', optPdfOcr:'OCR 识别为文本',
+    optDocToHtml:'→ HTML', optDocToTxt:'→ TXT',
+    optTxtToPdf:'→ PDF', optTxtMdToHtml:'按 Markdown 转 HTML',
+    optCsvToJson:'→ JSON', optCsvToPdf:'→ PDF (表格)',
+    optJsonFormat:'格式化 (美化)', optJsonMinify:'压缩 (一行)', optJsonToCsv:'→ CSV',
+    optMdToHtml:'→ HTML', optMdToPdf:'→ PDF', optHtmlToPdf:'→ PDF',
+    stPending:'待转换', stProcessing:'转换中', stDone:'完成', stError:'失败',
+    toastAdded:'已添加', toastUnsupported:'不支持的文件类型', toastNoConvDir:'暂不支持此格式的转换',
+    toastOverLimit:'超过 100MB 限制', toastNoPending:'没有待转换的文件',
+    toastConverting:'有文件正在转换，请稍候', toastQueueCleared:'队列已清空',
+    toastDone:'转换完成', toastFailed:'转换失败', toastNotRecognized:'未识别的转换方向',
+    toastMerged:'已合并', toastNeedTwoPdf:'需要至少 2 个 PDF 文件才能合并',
+    toastDownloadStarted:'已开始下载', toastCompressLarger:'原图已最优，无需压缩',
+    toastCompressSkipped:'原图较小，跳过压缩', toastWelcome:'欢迎使用转换大师！所有文件本地处理，隐私安全',
+    toastMergeFailed:'合并失败', toastAllDone:'完成', toastFilesUnit:'个文件转换',
+    toastOcrInit:'正在加载 OCR 引擎和模型（首次约 1-3 分钟，请耐心等待）…',
+    toastOcrModelLoaded:'OCR 模型已就绪', toastOcrPreloading:'正在后台预加载 OCR 模型…',
+    toastOcrDone:'OCR 识别完成', toastOcrEmpty:'未识别到文字',
+    toastCompareDone:'多格式对比完成', toastRecommend:'推荐',
+    toastWorkflowDone:'工作流执行完成', toastWorkflowEmpty:'请先添加步骤',
+    toastWfNoFiles:'请先上传文件到队列', toastWfStep:(n)=>`步骤 ${n}`,
+    aboutItems:[
+      '图片：JPG/PNG/WEBP 互转、多档压缩、多格式对比、多图合并 PDF、OCR 文字识别、可搜索 PDF',
+      'PDF：PDF→图片（每页）、PDF→文本提取、扫描型 PDF OCR 识别、多 PDF 合并',
+      '文档：DOCX→HTML/TXT、TXT→PDF',
+      '数据：CSV↔JSON 互转、JSON 格式化/压缩',
+      '文本：Markdown→HTML',
+      '工作流：拖拽编排多步骤串接处理（压缩→转格式→OCR→…一键执行）'
+    ],
+    pdfProgress:(i,n)=>`PDF→图片 (${i}/${n} 页)`,
+    pdfTextProgress:(i,n)=>`PDF→文本 (${i}/${n} 页)`,
+    pdfOcrProgress:(i,n)=>`PDF OCR (${i}/${n} 页)`,
+    ocrProgress:(p)=>`OCR 识别中 ${p}%`,
+  ocrModelProgress:(p)=>`下载 OCR 模型 ${p}%`,
+    mergeProgress:(i,n)=>`合并 PDF (${i}/${n})`,
+    convertingFile:(name)=>`正在转换 ${name}...`,
+    ocrFile:(name)=>`OCR 识别 ${name}...`,
+    mergedDocName:'合并文档.pdf', compareZipName:'formats_compare.zip',
+    pdfSourcesLabel:(n)=>`${n} 个 PDF`,
+    compareLabel:'格式对比', formatLabel:'格式', sizeLabel:'大小', vsOriginalLabel:'相对原图',
+    resultArrow:'→',
+    wfTitle:'工作流编排', wfSub:'串接多步骤，一键执行',
+    wfIntro:'先在上方上传文件，然后添加处理步骤。每个步骤会按顺序对队列中的文件执行。可拖拽步骤调整顺序。',
+    wfCompress:'压缩图片', wfToPng:'转 PNG', wfToJpg:'转 JPG', wfToWebp:'转 WEBP',
+    wfToPdf:'转 PDF', wfPdfToImages:'PDF 转图片', wfOcr:'OCR 识别', wfClearMeta:'清除元数据',
+    wfAddBtn:'+ 添加步骤', wfRun:'▶ 执行工作流',
+    wfStepCompress:'压缩', wfStepToPng:'转 PNG', wfStepToJpg:'转 JPG', wfStepToWebp:'转 WEBP',
+    wfStepToPdf:'转 PDF', wfStepPdfToImages:'PDF→图片', wfStepOcr:'OCR 识别', wfStepClearMeta:'清除元数据',
+    wfEmpty:'还没有步骤，请添加', wfRunning:'执行中…',
+    wfReplaceQueue:'工作流输出已替换队列'
+  },
+  en: {
+    title:'ConvertMaster · All-in-one Local File Converter',
+    desc:'Free online file conversion: images, PDF, Word, text, data formats. All processing happens locally in your browser — no uploads, full privacy.',
+    brand:'ConvertMaster', privacyOn:'Privacy',
+    navUpload:'Upload', navQueue:'Queue', navResult:'Result', navAbout:'About',
+    heroTitle:'All-in-one File Converter',
+    heroDesc:'Convert images, PDF, Word, text and data formats. All processing runs locally in your browser — files never leave your device, zero privacy leak.',
+    featPrivacy:'Privacy-safe', featFree:'Free', featNoReg:'No sign-up', featMobile:'Mobile-friendly', featBigFile:'Up to 100MB files',
+    modeSingle:'Single mode', modeWorkflow:'Workflow mode',
+    uploadTitle:'Drop files here, click to choose, or Ctrl/Cmd+V to paste screenshot',
+    uploadHint:'Supports images (JPG/PNG/WEBP/BMP/GIF), PDF, Word (DOCX), text (TXT/MD/CSV/JSON)',
+    uploadBtn:'Choose Files',
+    uploadTip:'Multiple files supported · Max 100MB per file',
+    queueTitle:'File Queue', queueSub:'Pick target format then convert',
+    btnConvertAll:'⚡ Convert All', btnMergePdf:'📑 Merge PDFs in queue', btnClearQueue:'🗑 Clear queue',
+    progressConverting:'Converting…', progressDone:'Done', progressFailed:'Failed',
+    resultTitle:'Results', btnDownloadAll:'⬇ Download all', btnClearResults:'✕ Clear results',
+    btnConvert:'Convert', btnDownload:'Download',
+    aboutTitle:'About this tool',
+    aboutDesc:'ConvertMaster is a pure front-end file converter — all logic runs in your browser, files never leave your device. Perfect for sensitive documents (contracts, IDs, financial reports) with zero data-leak risk.',
+    aboutSupported:'Supported conversions',
+    aboutTip:'Note: complex formats (DOCX with custom fonts, encrypted PDFs) may convert imperfectly. Test with small files first.',
+    footerLine1:'ConvertMaster · Pure front-end local file converter · Zero privacy leak · Free',
+    footerLine2:'All processing happens in your browser — files are never uploaded to any server',
+    labImage:'Image', labPdf:'PDF', labDoc:'Word', labTxt:'Text', labCsv:'CSV', labJson:'JSON', labMd:'Markdown', labHtml:'HTML', labUnknown:'Unknown',
+    optPng:'→ PNG', optJpg:'→ JPG', optWebp:'→ WEBP',
+    optCompressHigh:'Compress (high quality)', optCompressMid:'Compress (medium)', optCompressLow:'Compress (smallest)',
+    optCompare:'Compare output (JPG/PNG/WEBP)',
+    optImgToPdf:'→ PDF (single image)', optImgOcr:'OCR to text', optImgSearchablePdf:'→ Searchable PDF (OCR)',
+    optPdfToImages:'→ Images (per page)', optPdfToText:'→ Text extract', optPdfToPng:'→ PNG (first page)', optPdfOcr:'OCR to text',
+    optDocToHtml:'→ HTML', optDocToTxt:'→ TXT',
+    optTxtToPdf:'→ PDF', optTxtMdToHtml:'As Markdown → HTML',
+    optCsvToJson:'→ JSON', optCsvToPdf:'→ PDF (table)',
+    optJsonFormat:'Format (pretty)', optJsonMinify:'Minify (one line)', optJsonToCsv:'→ CSV',
+    optMdToHtml:'→ HTML', optMdToPdf:'→ PDF', optHtmlToPdf:'→ PDF',
+    stPending:'Pending', stProcessing:'Processing', stDone:'Done', stError:'Failed',
+    toastAdded:'Added', toastUnsupported:'Unsupported file type', toastNoConvDir:'Conversion not supported for this format',
+    toastOverLimit:'exceeds 100MB limit', toastNoPending:'No pending files',
+    toastConverting:'Files are being converted, please wait', toastQueueCleared:'Queue cleared',
+    toastDone:'converted', toastFailed:'Conversion failed', toastNotRecognized:'Unrecognized conversion',
+    toastMerged:'Merged', toastNeedTwoPdf:'Need at least 2 PDF files to merge',
+    toastDownloadStarted:'Download started', toastCompressLarger:'Original is already optimal, no need to compress',
+    toastCompressSkipped:'Original is small, compression skipped', toastWelcome:'Welcome to ConvertMaster! All files processed locally, privacy-safe',
+    toastMergeFailed:'Merge failed', toastAllDone:'Done', toastFilesUnit:'file(s) converted',
+    toastOcrInit:'Loading OCR engine and model (first time ~1-3 min, please wait)…',
+    toastOcrModelLoaded:'OCR model ready', toastOcrPreloading:'Pre-loading OCR model in background…',
+    toastOcrDone:'OCR complete', toastOcrEmpty:'No text recognized',
+    toastCompareDone:'Multi-format compare done', toastRecommend:'Recommended',
+    toastWorkflowDone:'Workflow complete', toastWorkflowEmpty:'Please add steps first',
+    toastWfNoFiles:'Please upload files to queue first', toastWfStep:(n)=>`Step ${n}`,
+    aboutItems:[
+      'Images: JPG/PNG/WEBP conversion, multi-level compression, multi-format compare, multi-image → PDF, OCR text recognition, searchable PDF',
+      'PDF: PDF→images (per page), PDF→text extract, scanned PDF OCR, merge multiple PDFs',
+      'Documents: DOCX→HTML/TXT, TXT→PDF',
+      'Data: CSV↔JSON, JSON format/minify',
+      'Text: Markdown→HTML',
+      'Workflow: drag-and-drop chaining of multiple steps (compress → convert → OCR → … one-click run)'
+    ],
+    pdfProgress:(i,n)=>`PDF→Image (${i}/${n} pages)`,
+    pdfTextProgress:(i,n)=>`PDF→Text (${i}/${n} pages)`,
+    pdfOcrProgress:(i,n)=>`PDF OCR (${i}/${n} pages)`,
+    ocrProgress:(p)=>`OCR recognizing ${p}%`,
+  ocrModelProgress:(p)=>`Downloading OCR model ${p}%`,
+    mergeProgress:(i,n)=>`Merging PDF (${i}/${n})`,
+    convertingFile:(name)=>`Converting ${name}...`,
+    ocrFile:(name)=>`OCR ${name}...`,
+    mergedDocName:'merged.pdf', compareZipName:'formats_compare.zip',
+    pdfSourcesLabel:(n)=>`${n} PDFs`,
+    compareLabel:'Format comparison', formatLabel:'Format', sizeLabel:'Size', vsOriginalLabel:'vs original',
+    resultArrow:'→',
+    wfTitle:'Workflow builder', wfSub:'Chain steps, run in one click',
+    wfIntro:'Upload files above first, then add processing steps. Each step runs in order on the files in queue. Drag steps to reorder.',
+    wfCompress:'Compress image', wfToPng:'→ PNG', wfToJpg:'→ JPG', wfToWebp:'→ WEBP',
+    wfToPdf:'→ PDF', wfPdfToImages:'PDF → images', wfOcr:'OCR', wfClearMeta:'Strip metadata',
+    wfAddBtn:'+ Add step', wfRun:'▶ Run workflow',
+    wfStepCompress:'Compress', wfStepToPng:'→ PNG', wfStepToJpg:'→ JPG', wfStepToWebp:'→ WEBP',
+    wfStepToPdf:'→ PDF', wfStepPdfToImages:'PDF→images', wfStepOcr:'OCR', wfStepClearMeta:'Strip metadata',
+    wfEmpty:'No steps yet, please add', wfRunning:'Running…',
+    wfReplaceQueue:'Workflow output replaced the queue'
+  }
+};
+
+let LANG = 'zh';
+function t(key, ...args){
+  const dict = I18N[LANG] || I18N.zh;
+  let v = dict[key];
+  if(v === undefined) v = I18N.zh[key];
+  if(typeof v === 'function') return v(...args);
+  return v;
+}
+function applyI18n(lang){
+  LANG = lang;
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const key = el.getAttribute('data-i18n');
+    const v = t(key);
+    if(typeof v === 'string' && v){
+      if(el.tagName === 'TITLE') el.textContent = v;
+      else if(el.tagName === 'META') el.setAttribute('content', v);
+      else if(el.tagName === 'OPTION') el.textContent = v;
+      else el.textContent = v;
+    }
+  });
+  const aboutList = document.getElementById('aboutList');
+  if(aboutList) aboutList.innerHTML = t('aboutItems').map(it=>`<li>${escapeHtml(it)}</li>`).join('');
+  document.getElementById('langZh').classList.toggle('active', lang==='zh');
+  document.getElementById('langEn').classList.toggle('active', lang==='en');
+  localStorage.setItem('cm-lang', lang);
+  renderQueue();
+  renderResults();
+  renderWorkflow();
+}
+
+const MAX_FILE_SIZE = 100 * 1024 * 1024;
+const LIBS = {
+  pdfLib: 'https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js',
+  pdfjs: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.min.js',
+  pdfjsWorker: 'https://cdn.jsdelivr.net/npm/pdfjs-dist@3.11.174/build/pdf.worker.min.js',
+  mammoth: 'https://cdn.jsdelivr.net/npm/mammoth@1.6.0/mammoth.browser.min.js',
+  tesseract: 'https://cdn.jsdelivr.net/npm/tesseract.js@5.0.4/dist/tesseract.min.js'
+};
+const libCache = {};
+async function loadScript(url){
+  if(libCache[url]) return libCache[url];
+  return new Promise((resolve,reject)=>{
+    const s = document.createElement('script');
+    s.src = url; s.async = true;
+    s.onload = ()=>{ libCache[url] = true; resolve(); };
+    s.onerror = ()=>reject(new Error('load failed: '+url));
+    document.head.appendChild(s);
+  });
+}
+
+function toast(msg, type='info', timeout=3500){
+  const host = document.getElementById('toast-host');
+  const el = document.createElement('div');
+  el.className = 'toast ' + type;
+  const icons = {info:'ℹ️', success:'✅', warn:'⚠️', error:'❌'};
+  el.innerHTML = `<span class="ticon">${icons[type]||'ℹ️'}</span><span class="tmsg"></span>`;
+  el.querySelector('.tmsg').textContent = msg;
+  host.appendChild(el);
+  setTimeout(()=>{
+    el.style.opacity = '0';
+    el.style.transform = 'translateX(100%)';
+    el.style.transition = 'all .25s';
+    setTimeout(()=>el.remove(), 250);
+  }, timeout);
+}
+
+function getFileKind(file){
+  const name = file.name.toLowerCase();
+  const ext = name.slice(name.lastIndexOf('.')+1);
+  if(['jpg','jpeg','png','webp','bmp','gif'].includes(ext)) return {kind:'image', ext, icon:'ic-img', label:t('labImage')};
+  if(ext === 'pdf') return {kind:'pdf', ext, icon:'ic-pdf', label:t('labPdf')};
+  if(['doc','docx'].includes(ext)) return {kind:'doc', ext, icon:'ic-doc', label:t('labDoc')};
+  if(ext === 'txt') return {kind:'txt', ext, icon:'ic-txt', label:t('labTxt')};
+  if(ext === 'csv') return {kind:'csv', ext, icon:'ic-csv', label:t('labCsv')};
+  if(ext === 'json') return {kind:'json', ext, icon:'ic-json', label:t('labJson')};
+  if(['md','markdown'].includes(ext)) return {kind:'md', ext, icon:'ic-md', label:t('labMd')};
+  if(['html','htm'].includes(ext)) return {kind:'html', ext, icon:'ic-doc', label:t('labHtml')};
+  return {kind:'unknown', ext, icon:'ic-unk', label:t('labUnknown')};
+}
+function getConvertOptions(info){
+  const opts = {
+    image: [
+      {v:'png', label:t('optPng')},{v:'jpg', label:t('optJpg')},{v:'webp', label:t('optWebp')},
+      {v:'compressHigh', label:t('optCompressHigh')},{v:'compressMid', label:t('optCompressMid')},{v:'compressLow', label:t('optCompressLow')},
+      {v:'compare', label:t('optCompare')},
+      {v:'ocr', label:t('optImgOcr')},{v:'searchablePdf', label:t('optImgSearchablePdf')},
+      {v:'pdf', label:t('optImgToPdf')}
+    ],
+    pdf: [{v:'images', label:t('optPdfToImages')},{v:'text', label:t('optPdfToText')},{v:'png', label:t('optPdfToPng')},{v:'ocr', label:t('optPdfOcr')}],
+    doc: [{v:'html', label:t('optDocToHtml')},{v:'txt', label:t('optDocToTxt')}],
+    txt: [{v:'pdf', label:t('optTxtToPdf')},{v:'md2html', label:t('optTxtMdToHtml')}],
+    csv: [{v:'json', label:t('optCsvToJson')},{v:'pdf', label:t('optCsvToPdf')}],
+    json: [{v:'format', label:t('optJsonFormat')},{v:'minify', label:t('optJsonMinify')},{v:'csv', label:t('optJsonToCsv')}],
+    md: [{v:'html', label:t('optMdToHtml')},{v:'pdf', label:t('optMdToPdf')}],
+    html: [{v:'pdf', label:t('optHtmlToPdf')}]
+  };
+  return opts[info.kind] || [];
+}
+
+const queue = [];
+let queueId = 0;
+function addFile(file){
+  if(file.size > MAX_FILE_SIZE){ toast(`"${file.name}" ${t('toastOverLimit')}`, 'error'); return; }
+  const info = getFileKind(file);
+  if(info.kind === 'unknown'){ toast(`.${info.ext} ${t('toastUnsupported')}`, 'warn'); return; }
+  const options = getConvertOptions(info);
+  if(options.length === 0){ toast(`${info.label} ${t('toastNoConvDir')}`, 'warn'); return; }
+  const id = ++queueId;
+  queue.push({id, file, info, target: options[0].v, status:'pending', result:null});
+  renderQueue();
+  toast(`${t('toastAdded')}: ${file.name}`, 'success', 2000);
+}
+function removeFile(id){ const i = queue.findIndex(q=>q.id===id); if(i>=0) queue.splice(i,1); renderQueue(); }
+function clearQueue(){
+  if(queue.length === 0) return;
+  if(queue.some(q=>q.status==='processing')){ toast(t('toastConverting'), 'warn'); return; }
+  queue.length = 0; renderQueue(); toast(t('toastQueueCleared'), 'info', 1500);
+}
+function setTarget(id, target){ const item = queue.find(q=>q.id===id); if(item) item.target = target; }
+function fmtSize(b){ if(b<1024) return b+' B'; if(b<1024*1024) return (b/1024).toFixed(1)+' KB'; return (b/1024/1024).toFixed(1)+' MB'; }
+function statusBadge(s){
+  const m = {
+    pending:`<span class="badge-sm">${t('stPending')}</span>`,
+    processing:`<span class="badge-sm" style="background:var(--brand-soft);color:var(--brand)">${t('stProcessing')}</span>`,
+    done:`<span class="badge-sm" style="background:var(--green-soft);color:var(--green)">${t('stDone')}</span>`,
+    error:`<span class="badge-sm" style="background:var(--red-soft);color:var(--red)">${t('stError')}</span>`
+  };
+  return m[s] || '';
+}
+function renderQueue(){
+  const list = document.getElementById('fileList');
+  const section = document.getElementById('queue');
+  document.getElementById('queueCount').textContent = queue.length;
+  if(queue.length === 0){ section.style.display = 'none'; return; }
+  section.style.display = 'block';
+  list.innerHTML = queue.map(item=>{
+    const options = getConvertOptions(item.info);
+    const statusCls = item.status==='processing'?'processing':(item.status==='done'?'done':(item.status==='error'?'error':''));
+    return `
+    <div class="file-item ${statusCls}" data-id="${item.id}">
+      <div class="file-icon ${item.info.icon}">${item.info.ext.toUpperCase().slice(0,3)}</div>
+      <div class="file-meta">
+        <div class="file-name">${escapeHtml(item.file.name)}</div>
+        <div class="file-info">
+          <span>${fmtSize(item.file.size)}</span><span>·</span><span>${item.info.label}</span>${statusBadge(item.status)}
+        </div>
+      </div>
+      <div class="file-actions">
+        <select class="conv-select" onchange="setTarget(${item.id}, this.value)" ${item.status==='processing'?'disabled':''}>
+          ${options.map(o=>`<option value="${o.v}" ${o.v===item.target?'selected':''}>${escapeHtml(o.label)}</option>`).join('')}
+        </select>
+        <button class="btn-sm" onclick="convertOne(${item.id})" ${item.status==='processing'?'disabled':''}>${t('btnConvert')}</button>
+        <button class="btn-ghost" onclick="removeFile(${item.id})">✕</button>
+      </div>
+    </div>`;
+  }).join('');
+}
+function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+let progressTimer = null;
+function showProgress(label, pct){
+  const wrap = document.getElementById('progressWrap');
+  wrap.classList.add('active');
+  document.getElementById('progressLabel').textContent = label;
+  document.getElementById('progressPct').textContent = Math.round(pct)+'%';
+  document.getElementById('progressFill').style.width = pct+'%';
+  document.getElementById('progressFill').className = 'progress-fill';
+}
+function doneProgress(success=true){
+  const fill = document.getElementById('progressFill');
+  fill.className = 'progress-fill ' + (success?'done':'error');
+  document.getElementById('progressPct').textContent = success?t('progressDone'):t('progressFailed');
+  setTimeout(()=>{ document.getElementById('progressWrap').classList.remove('active'); }, 2000);
+}
+function pulseProgress(label){ let pct=5; showProgress(label, pct); clearInterval(progressTimer); progressTimer=setInterval(()=>{ pct+=Math.random()*8; if(pct>92) pct=92; showProgress(label, pct); }, 400); }
+function stopPulse(){ clearInterval(progressTimer); }
+function yield_(){ return new Promise(r=>setTimeout(r, 0)); }
+
+const results = [];
+function addResult(r){ r.url = URL.createObjectURL(r.blob); results.push(r); renderResults(); }
+function clearResults(){ results.forEach(r=>{ if(r.url) URL.revokeObjectURL(r.url); }); results.length = 0; renderResults(); }
+function renderResults(){
+  const section = document.getElementById('result');
+  const list = document.getElementById('resultList');
+  document.getElementById('resultCount').textContent = results.length;
+  if(results.length === 0){ section.classList.remove('active'); return; }
+  section.classList.add('active');
+  list.innerHTML = results.map(r=>{
+    let preview = '';
+    if(r.previewType === 'image') preview = `<div class="preview-box"><img src="${r.url}" alt="${escapeHtml(r.outName)}"></div>`;
+    else if(r.previewType === 'images') preview = `<div class="preview-box">${r.previewUrls.map(u=>`<div class="pdf-page"><img src="${u}" alt="page"></div>`).join('')}</div>`;
+    else if(r.previewType === 'text') preview = `<div class="preview-box"><div class="text-out">${escapeHtml(r.previewText)}</div></div>`;
+    else if(r.previewType === 'html') preview = `<div class="preview-box"><div class="html-out">${r.previewHtml}</div></div>`;
+    else if(r.previewType === 'compare'){
+      const rows = r.compareData.map((c,i)=>`<tr class="${i===r.recommendIdx?'recommend':''}"><td>${c.format}</td><td>${fmtSize(c.size)}</td><td>${c.vsOriginal}</td>${i===r.recommendIdx?`<td>${t('toastRecommend')} ★</td>`:'<td></td>'}</tr>`).join('');
+      preview = `<div class="preview-box"><table class="compare-table"><thead><tr><th>${t('formatLabel')}</th><th>${t('sizeLabel')}</th><th>${t('vsOriginalLabel')}</th><th></th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    }
+    else preview = `<div class="preview-box"><div class="preview-empty">${LANG==='zh'?'此格式暂不支持预览，请直接下载查看':'Preview unavailable, please download'}</div></div>`;
+    const saveInfo = r.savedBytes > 0 ? `<span class="save">${LANG==='zh'?'省':'saved'} ${fmtSize(r.savedBytes)}</span>` : '';
+    return `
+    <div class="result-card">
+      <div class="rhead">
+        <div class="rtitle">${escapeHtml(r.sourceName)} <span class="arrow">${t('resultArrow')}</span> ${escapeHtml(r.outName)}</div>
+        <div class="rmeta">${fmtSize(r.blob.size)} ${saveInfo}</div>
+      </div>
+      <div><a class="btn-download" href="${r.url}" download="${escapeHtml(r.outName)}">⬇ ${t('btnDownload')} ${escapeHtml(r.outName)}</a></div>
+      ${r.ocrStats ? `<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px"><div style="background:#f0f3f9;border-radius:8px;padding:8px 12px;text-align:center"><div style="font-size:18px;font-weight:700;color:var(--brand)">${r.ocrStats.lines}</div><div style="font-size:11px;color:var(--ink-3)">${LANG==='zh'?'行数':'Lines'}</div></div><div style="background:#f0f3f9;border-radius:8px;padding:8px 12px;text-align:center"><div style="font-size:18px;font-weight:700;color:var(--green)">${r.ocrStats.chars}</div><div style="font-size:11px;color:var(--ink-3)">${LANG==='zh'?'字符':'Chars'}</div></div><div style="background:#f0f3f9;border-radius:8px;padding:8px 12px;text-align:center"><div style="font-size:18px;font-weight:700;color:var(--purple)">${r.ocrStats.confidence !== null ? r.ocrStats.confidence+'%' : '--'}</div><div style="font-size:11px;color:var(--ink-3)">${LANG==='zh'?'置信度':'Confidence'}</div></div></div>` : ''}
+      ${preview}
+    </div>`;
+  }).join('');
+}
+async function downloadAll(){
+  for(const r of results){
+    const a = document.createElement('a');
+    a.href = r.url; a.download = r.outName;
+    document.body.appendChild(a); a.click(); a.remove();
+    await new Promise(res=>setTimeout(res, 300));
+  }
+  toast(`${t('toastDownloadStarted')} ${results.length}`, 'success');
+}
+
+// 错误消息分类映射：把 SDK 内部晦涩的错误转成用户友好提示
+function formatErrorMessage(err){
+  const msg = (err && err.message) ? err.message : String(err || '');
+  const zh = LANG === 'zh';
+  if(/Failed to fetch/i.test(msg)) return zh ? '模型或资源加载失败，请检查网络连接后重试' : 'Model or resource load failed, please check network and retry';
+  if(/file:|file:\/\/\//i.test(msg) || msg.includes("are treated as unique")) return zh ? '需通过 http:// 协议访问才能使用此功能（Web Worker 跨源限制），请用本地服务器打开' : 'Requires http:// protocol (Web Worker cross-origin limit), please use a local server';
+  if(/DataCloneError/i.test(msg)) return zh ? '浏览器序列化失败，请刷新页面后重试' : 'Browser serialization failed, please refresh and retry';
+  if(/WebGPU/i.test(msg)) return zh ? '当前浏览器不支持 WebGPU，请刷新或换浏览器重试' : 'WebGPU not available, please refresh or switch browser';
+  if(/initWasm|no available backend/i.test(msg)) return zh ? '运行时初始化失败，请刷新页面重试' : 'Runtime init failed, please refresh and retry';
+  if(/worker failed/i.test(msg)) return zh ? '浏览器 Worker 初始化失败，请刷新页面重试' : 'Worker init failed, please refresh and retry';
+  if(/load failed/i.test(msg)) return zh ? 'CDN 资源加载失败，请检查网络后重试' : 'CDN resource load failed, check network and retry';
+  if(/image load failed/i.test(msg)) return zh ? '图片加载失败，文件可能已损坏' : 'Image load failed, file may be corrupted';
+  if(/canvas convert failed/i.test(msg)) return zh ? '图片格式转换失败，浏览器不支持此格式' : 'Image format conversion failed, browser may not support this format';
+  if(/CSV empty|JSON empty/i.test(msg)) return zh ? '文件内容为空' : 'File content is empty';
+  if(/Unsupported file type|Conversion not supported/i.test(msg)) return zh ? '不支持的文件类型或转换方向' : 'Unsupported file type or conversion direction';
+  if(/compress failed/i.test(msg)) return zh ? '图片压缩失败' : 'Image compression failed';
+  return msg;
+}
+
+async function stripPdfMetadata(pdfDoc){
+  try {
+    pdfDoc.setProducer(''); pdfDoc.setCreator('');
+    pdfDoc.setTitle(''); pdfDoc.setAuthor('');
+    pdfDoc.setSubject(''); pdfDoc.setKeywords([]);
+    pdfDoc.setCreationDate(new Date(0)); pdfDoc.setModificationDate(new Date(0));
+  } catch(e) {}
+  return pdfDoc;
+}
+
+async function convertImage(file, target, sourceInfo){
+  const bitmap = await loadImage(file);
+  if(target.startsWith('compress')){
+    const qualityMap = {compressHigh:0.85, compressMid:0.7, compressLow:0.5};
+    const quality = qualityMap[target] || 0.7;
+    if(file.size < 50*1024){
+      const webpBlob = await canvasToBlob(bitmap, 'image/webp', quality);
+      if(webpBlob && webpBlob.size < file.size){
+        return {blob: webpBlob, outName: replaceExt(file.name,'webp'), previewType:'image', savedBytes: file.size - webpBlob.size};
+      }
+      toast(`${file.name}: ${t('toastCompressSkipped')}`, 'info', 3000);
+      return null;
+    }
+    let workBitmap = bitmap;
+    const MAX_DIM = 2000;
+    const w = bitmap.naturalWidth || bitmap.width, h = bitmap.naturalHeight || bitmap.height;
+    if(w > MAX_DIM || h > MAX_DIM){
+      const ratio = Math.min(MAX_DIM/w, MAX_DIM/h);
+      const canvas = document.createElement('canvas');
+      canvas.width = Math.round(w*ratio); canvas.height = Math.round(h*ratio);
+      canvas.getContext('2d').drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+      workBitmap = canvas;
+    }
+    const candidates = [];
+    if(sourceInfo.ext === 'png' || sourceInfo.ext === 'webp'){
+      try{ const webp = await canvasToBlob(workBitmap, 'image/webp', quality, true); if(webp) candidates.push({blob:webp, ext:'webp'}); }catch(e){}
+    }
+    try{ const jpeg = await canvasToBlob(workBitmap, 'image/jpeg', quality, false); if(jpeg) candidates.push({blob:jpeg, ext:'jpg'}); }catch(e){}
+    if(candidates.length === 0) throw new Error('compress failed');
+    candidates.sort((a,b)=>a.blob.size - b.blob.size);
+    const best = candidates[0];
+    if(best.blob.size >= file.size){
+      toast(`${file.name}: ${t('toastCompressLarger')} (${fmtSize(file.size)} → ${fmtSize(best.blob.size)})`, 'warn', 4000);
+      return null;
+    }
+    return {blob: best.blob, outName: replaceExt(file.name, best.ext), previewType:'image', savedBytes: file.size - best.blob.size};
+  }
+  if(target === 'compare'){
+    const base = file.name.replace(/\.[^.]+$/, '');
+    const formats = [
+      {ext:'png', mime:'image/png', quality:1, keepAlpha:true},
+      {ext:'jpg', mime:'image/jpeg', quality:0.85, keepAlpha:false},
+      {ext:'webp', mime:'image/webp', quality:0.85, keepAlpha:true}
+    ];
+    const data = [];
+    const named = [];
+    for(const f of formats){
+      const blob = await canvasToBlob(bitmap, f.mime, f.quality, f.keepAlpha);
+      const vsOrig = blob.size < file.size ? `-${Math.round((1-blob.size/file.size)*100)}%` : `+${Math.round((blob.size/file.size-1)*100)}%`;
+      data.push({format: f.ext.toUpperCase(), size: blob.size, vsOriginal: vsOrig});
+      named.push({name: `${base}.${f.ext}`, data: new Uint8Array(await blob.arrayBuffer())});
+      await yield_();
+    }
+    const recommendIdx = data.reduce((mi, c, i, arr)=> c.size < arr[mi].size ? i : mi, 0);
+    const zipBlob = await makeZipFromNamed(named);
+    return {blob: zipBlob, outName: t('compareZipName'), previewType:'compare', compareData: data, recommendIdx, savedBytes: file.size - data[recommendIdx].size};
+  }
+  if(target === 'ocr') return await ocrImage(file);
+  if(target === 'searchablePdf') return await imageToSearchablePdf(file);
+  const mimeMap = {png:'image/png', jpg:'image/jpeg', webp:'image/webp'};
+  const mime = mimeMap[target];
+  if(!mime) throw new Error(t('toastNotRecognized'));
+  const keepAlpha = (target === 'png' || target === 'webp');
+  const blob = await canvasToBlob(bitmap, mime, 0.92, keepAlpha);
+  return {blob, outName: replaceExt(file.name, target), previewType:'image'};
+}
+function loadImage(file){
+  return new Promise((resolve,reject)=>{
+    const img = new Image();
+    img.onload = ()=>resolve(img);
+    img.onerror = ()=>reject(new Error('image load failed'));
+    img.src = URL.createObjectURL(file);
+  });
+}
+function canvasToBlob(img, mime, quality, keepAlpha=false){
+  return new Promise((resolve,reject)=>{
+    const canvas = document.createElement('canvas');
+    canvas.width = img.naturalWidth || img.width;
+    canvas.height = img.naturalHeight || img.height;
+    const ctx = canvas.getContext('2d');
+    if(!keepAlpha){ ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,canvas.width,canvas.height); }
+    ctx.drawImage(img, 0, 0);
+    canvas.toBlob(b=>{ if(b) resolve(b); else reject(new Error('canvas convert failed')); }, mime, quality);
+  });
+}
+
+let tesseractWorker = null;
+// OCR 任务上下文：因为 Tesseract.js v5 的 logger 必须在 createWorker 时传入（不能后续 setLogger），
+// 用闭包变量让固定 logger 函数根据"当前任务"显示不同进度文案
+let ocrTask = null; // {mode:'image'|'searchable'|'pdf', fileName, pageNum, totalPages}
+let ocrModelReady = false; // 模型是否已加载
+function ocrLogger(progress){
+  // 模型下载阶段：loading language traineddata / loading language model
+  if(progress.status && (progress.status.includes('loading') || progress.status.includes('initializing'))){
+    if(progress.progress){
+      const p = Math.round(progress.progress * 100);
+      showProgress(t('ocrModelProgress', p), p);
+    }
+    return;
+  }
+  // 识别阶段
+  if(!(progress.status === 'recognizing text' && progress.progress)) return;
+  const p = Math.round(progress.progress * 100);
+  if(!ocrTask) { showProgress(t('ocrProgress', p), p); return; }
+  if(ocrTask.mode === 'pdf'){
+    showProgress(t('pdfOcrProgress', ocrTask.pageNum, ocrTask.totalPages) + ' ' + t('ocrProgress', p), (ocrTask.pageNum/ocrTask.totalPages)*100);
+  } else {
+    showProgress(t('ocrProgress', p), p);
+  }
+}
+// 预加载：页面空闲时静默初始化 OCR worker，用户第一次点 OCR 时已有缓存
+let ocrPreloadStarted = false;
+function preloadOcr(){
+  if(ocrPreloadStarted || ocrModelReady) return;
+  ocrPreloadStarted = true;
+  // 延迟 5 秒后在后台静默预加载（不阻塞用户操作）
+  setTimeout(async ()=>{
+    try {
+      await getOcrWorker();
+      ocrModelReady = true;
+    } catch(e) {
+      ocrPreloadStarted = false; // 失败了允许重试
+    }
+  }, 0);
+}
+async function getOcrWorker(){
+  if(tesseractWorker) return tesseractWorker;
+  await loadScript(LIBS.tesseract);
+  // v5 API：logger 在 createWorker 第三参数 options 里设置，主线程执行（不会被克隆到 Worker）
+  const w = await Tesseract.createWorker(['chi_sim', 'eng'], 1, { logger: ocrLogger });
+  // 中文识别优化参数：自动页面分割 + 保留词间空格
+  try {
+    await w.setParameters({
+      tessedit_pageseg_mode: '3',
+      preserve_interword_spaces: '1',
+    });
+  } catch(e) {}
+  tesseractWorker = w;
+  ocrModelReady = true;
+  return w;
+}
+async function ocrImage(file){
+  stopPulse();
+  toast(t('toastOcrInit'), 'info', 6000);
+  showProgress(t('ocrFile', file.name), 5);
+  ocrTask = {mode:'image', fileName: file.name};
+  const w = await getOcrWorker();
+  if(ocrModelReady) toast(t('toastOcrModelLoaded'), 'success', 2000);
+  const ret = await w.recognize(file);
+  ocrTask = null;
+  const text = ret.data.text || '';
+  if(!text.trim()){ toast(t('toastOcrEmpty'), 'warn', 3000); }
+  // OCR 统计：行数/字符数/置信度
+  const ocrStats = {
+    lines: (ret.data.lines && ret.data.lines.length) || (text ? text.split(/\n/).length : 0),
+    chars: text.replace(/\s/g,'').length,
+    confidence: ret.data.confidence ? Math.round(ret.data.confidence) : null
+  };
+  const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+  return {blob, outName: replaceExt(file.name,'txt'), previewType:'text', previewText: text.slice(0,5000), ocrStats};
+}
+async function imageToSearchablePdf(file){
+  await loadScript(LIBS.pdfLib);
+  const { PDFDocument, StandardFonts, rgb } = PDFLib;
+  stopPulse();
+  toast(t('toastOcrInit'), 'info', 6000);
+  showProgress(t('ocrFile', file.name), 5);
+  ocrTask = {mode:'searchable', fileName: file.name};
+  const w = await getOcrWorker();
+  const ret = await w.recognize(file);
+  ocrTask = null;
+  const text = ret.data.text || '';
+  const img = await loadImage(file);
+  const canvas = document.createElement('canvas');
+  canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+  canvas.getContext('2d').drawImage(img, 0, 0);
+  const imgBlob = await new Promise(r=>canvas.toBlob(r, 'image/png'));
+  const imgBytes = new Uint8Array(await imgBlob.arrayBuffer());
+  const pdf = await PDFDocument.create();
+  await stripPdfMetadata(pdf);
+  const font = await pdf.embedFont(StandardFonts.Helvetica);
+  const pdfImg = await pdf.embedPng(imgBytes);
+  const page = pdf.addPage([pdfImg.width, pdfImg.height]);
+  page.drawImage(pdfImg, {x:0, y:0, width:pdfImg.width, height:pdfImg.height});
+  if(text.trim()){
+    const fontSize = 2;
+    let y = pdfImg.height - fontSize;
+    for(const line of text.split(/\n/)){
+      if(y < 0) break;
+      try { page.drawText(line, {x:0, y, size:fontSize, font, color:rgb(1,1,1), opacity:0.01}); } catch(e){}
+      y -= fontSize * 1.2;
+    }
+  }
+  const out = await pdf.save();
+  return {blob: new Blob([out], {type:'application/pdf'}), outName: replaceExt(file.name,'pdf'), previewType:'none'};
+}
+async function pdfOcr(file){
+  await loadScript(LIBS.pdfjs);
+  if(window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = LIBS.pdfjsWorker;
+  stopPulse();
+  toast(t('toastOcrInit'), 'info', 6000);
+  showProgress(t('ocrFile', file.name), 5);
+  const w = await getOcrWorker();
+  const data = new Uint8Array(await file.arrayBuffer());
+  const pdf = await pdfjsLib.getDocument({data}).promise;
+  let fullText = '';
+  for(let i=1;i<=pdf.numPages;i++){
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    let pageText = content.items.map(it=>it.str).join(' ');
+    if(!pageText.trim()){
+      const viewport = page.getViewport({scale: 2});
+      const canvas = document.createElement('canvas');
+      canvas.width = viewport.width; canvas.height = viewport.height;
+      const ctx = canvas.getContext('2d');
+      await page.render({canvasContext: ctx, viewport}).promise;
+      const imgBlob = await new Promise(r=>canvas.toBlob(r, 'image/png'));
+      ocrTask = {mode:'pdf', fileName: file.name, pageNum: i, totalPages: pdf.numPages};
+      const ret = await w.recognize(imgBlob);
+      pageText = ret.data.text || '';
+    }
+    const sep = LANG==='zh' ? `\n\n--- 第${i}页 ---\n\n` : `\n\n--- Page ${i} ---\n\n`;
+    fullText += (i>1?sep:'') + pageText;
+    await yield_();
+    if(pdf.numPages > 1) showProgress(t('pdfOcrProgress', i, pdf.numPages), (i/pdf.numPages)*100);
+  }
+  if(!fullText.trim()){ toast(t('toastOcrEmpty'), 'warn', 3000); }
+  ocrTask = null;
+  const blob = new Blob([fullText], {type:'text/plain;charset=utf-8'});
+  return {blob, outName: replaceExt(file.name,'txt'), previewType:'text', previewText: fullText.slice(0,5000)};
+}
+
+async function imageToPdf(file){
+  await loadScript(LIBS.pdfLib);
+  const { PDFDocument } = PDFLib;
+  const img = await loadImage(file);
+  const canvas = document.createElement('canvas');
+  canvas.width = img.naturalWidth; canvas.height = img.naturalHeight;
+  canvas.getContext('2d').drawImage(img, 0, 0);
+  const blob = await new Promise(r=>canvas.toBlob(r, 'image/png'));
+  const bytes = new Uint8Array(await blob.arrayBuffer());
+  const pdf = await PDFDocument.create();
+  await stripPdfMetadata(pdf);
+  const pdfImg = await pdf.embedPng(bytes);
+  const page = pdf.addPage([pdfImg.width, pdfImg.height]);
+  page.drawImage(pdfImg, {x:0, y:0, width:pdfImg.width, height:pdfImg.height});
+  const out = await pdf.save();
+  return {blob: new Blob([out], {type:'application/pdf'}), outName: replaceExt(file.name,'pdf'), previewType:'none'};
+}
+async function pdfToImages(file, onlyFirst=false){
+  await loadScript(LIBS.pdfjs);
+  if(window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = LIBS.pdfjsWorker;
+  const data = new Uint8Array(await file.arrayBuffer());
+  const pdf = await pdfjsLib.getDocument({data}).promise;
+  const numPages = onlyFirst ? 1 : pdf.numPages;
+  const previewUrls = [];
+  const blobs = [];
+  for(let i=1;i<=numPages;i++){
+    const page = await pdf.getPage(i);
+    const viewport = page.getViewport({scale: 1.5});
+    const canvas = document.createElement('canvas');
+    canvas.width = viewport.width; canvas.height = viewport.height;
+    const ctx = canvas.getContext('2d');
+    await page.render({canvasContext: ctx, viewport}).promise;
+    const blob = await new Promise(r=>canvas.toBlob(r, 'image/png'));
+    blobs.push(blob);
+    previewUrls.push(URL.createObjectURL(blob));
+    await yield_();
+    if(numPages > 1) pulseProgress(t('pdfProgress', i, numPages), (i/numPages)*100);
+  }
+  if(onlyFirst || blobs.length === 1){
+    return {blob: blobs[0], outName: replaceExt(file.name,'png'), previewType:'image', _previewUrl: previewUrls[0]};
+  }
+  const base = file.name.replace(/\.[^.]+$/, '');
+  const named = [];
+  for(let i=0;i<blobs.length;i++){
+    named.push({name: `${base}_page${String(i+1).padStart(3,'0')}.png`, data: new Uint8Array(await blobs[i].arrayBuffer())});
+  }
+  const zip = await makeZipFromNamed(named);
+  return {blob: zip, outName: replaceExt(file.name,'zip'), previewType:'images', previewUrls};
+}
+async function makeZipFromNamed(files){
+  const chunks = [], central = [];
+  let offset = 0;
+  const enc = new TextEncoder();
+  for(const f of files){
+    const nameBytes = enc.encode(f.name);
+    const crc = crc32(f.data);
+    const localHeader = new Uint8Array(30 + nameBytes.length);
+    const dv = new DataView(localHeader.buffer);
+    dv.setUint32(0, 0x04034b50, true); dv.setUint16(4, 20, true); dv.setUint16(6, 0, true);
+    dv.setUint16(8, 0, true); dv.setUint16(10, 0, true); dv.setUint16(12, 0x21, true);
+    dv.setUint32(14, crc, true); dv.setUint32(18, f.data.length, true); dv.setUint32(22, f.data.length, true);
+    dv.setUint16(26, nameBytes.length, true); dv.setUint16(28, 0, true);
+    localHeader.set(nameBytes, 30);
+    chunks.push(localHeader); chunks.push(f.data);
+    const cd = new Uint8Array(46 + nameBytes.length);
+    const cdv = new DataView(cd.buffer);
+    cdv.setUint32(0, 0x02014b50, true); cdv.setUint16(4, 20, true); cdv.setUint16(6, 20, true);
+    cdv.setUint16(8, 0, true); cdv.setUint16(10, 0, true); cdv.setUint16(12, 0, true); cdv.setUint16(14, 0x21, true);
+    cdv.setUint32(16, crc, true); cdv.setUint32(20, f.data.length, true); cdv.setUint32(24, f.data.length, true);
+    cdv.setUint16(28, nameBytes.length, true); cdv.setUint16(30, 0, true); cdv.setUint16(32, 0, true);
+    cdv.setUint16(34, 0, true); cdv.setUint16(36, 0, true); cdv.setUint32(38, 0, true); cdv.setUint32(42, offset, true);
+    cd.set(nameBytes, 46);
+    central.push(cd);
+    offset += localHeader.length + f.data.length;
+  }
+  let cdSize = 0; central.forEach(c=>cdSize += c.length);
+  const eocd = new Uint8Array(22);
+  const edv = new DataView(eocd.buffer);
+  edv.setUint32(0, 0x06054b50, true); edv.setUint16(8, 0, true); edv.setUint16(10, 0, true);
+  edv.setUint16(12, files.length, true); edv.setUint16(14, files.length, true);
+  edv.setUint32(16, cdSize, true); edv.setUint32(20, offset + cdSize, true);
+  const total = chunks.reduce((s,c)=>s+c.length,0) + cdSize + 22;
+  const out = new Uint8Array(total);
+  let pos = 0;
+  for(const c of chunks){ out.set(c, pos); pos += c.length; }
+  for(const c of central){ out.set(c, pos); pos += c.length; }
+  out.set(eocd, pos);
+  return new Blob([out], {type:'application/zip'});
+}
+function crc32(bytes){
+  let table = crc32.table;
+  if(!table){ table = new Uint32Array(256); for(let n=0;n<256;n++){ let c=n; for(let k=0;k<8;k++) c = (c&1) ? (0xEDB88320 ^ (c>>>1)) : (c>>>1); table[n]=c; } crc32.table = table; }
+  let crc = 0xFFFFFFFF;
+  for(let i=0;i<bytes.length;i++) crc = table[(crc ^ bytes[i]) & 0xFF] ^ (crc >>> 8);
+  return (crc ^ 0xFFFFFFFF) >>> 0;
+}
+async function pdfToText(file){
+  await loadScript(LIBS.pdfjs);
+  if(window.pdfjsLib) pdfjsLib.GlobalWorkerOptions.workerSrc = LIBS.pdfjsWorker;
+  const data = new Uint8Array(await file.arrayBuffer());
+  const pdf = await pdfjsLib.getDocument({data}).promise;
+  let text = '';
+  for(let i=1;i<=pdf.numPages;i++){
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    const pageText = content.items.map(it=>it.str).join(' ');
+    const sep = LANG==='zh' ? `\n\n--- 第${i}页 ---\n\n` : `\n\n--- Page ${i} ---\n\n`;
+    text += (i>1?sep:'') + pageText;
+    await yield_();
+    if(pdf.numPages > 1) pulseProgress(t('pdfTextProgress', i, pdf.numPages), (i/pdf.numPages)*100);
+  }
+  const blob = new Blob([text], {type:'text/plain;charset=utf-8'});
+  return {blob, outName: replaceExt(file.name,'txt'), previewType:'text', previewText: text.slice(0,5000)};
+}
+async function mergePdfs(files){
+  await loadScript(LIBS.pdfLib);
+  const { PDFDocument } = PDFLib;
+  const merged = await PDFDocument.create();
+  for(let i=0;i<files.length;i++){
+    const bytes = new Uint8Array(await files[i].arrayBuffer());
+    const src = await PDFDocument.load(bytes);
+    const pages = await merged.copyPages(src, src.getPageIndices());
+    pages.forEach(p=>merged.addPage(p));
+    pulseProgress(t('mergeProgress', i+1, files.length), ((i+1)/files.length)*100);
+  }
+  await stripPdfMetadata(merged);
+  const out = await merged.save();
+  return {blob: new Blob([out], {type:'application/pdf'}), outName: t('mergedDocName'), previewType:'none'};
+}
+async function docxConvert(file, target){
+  await loadScript(LIBS.mammoth);
+  const arrayBuffer = await file.arrayBuffer();
+  const result = await mammoth.convertToHtml({arrayBuffer});
+  if(target === 'txt'){
+    const tmp = document.createElement('div');
+    tmp.innerHTML = result.value;
+    const text = tmp.textContent || '';
+    return {blob: new Blob([text], {type:'text/plain;charset=utf-8'}), outName: replaceExt(file.name,'txt'), previewType:'text', previewText: text.slice(0,5000)};
+  }
+  const html = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${escapeHtml(file.name)}</title></head><body>${result.value}</body></html>`;
+  return {blob: new Blob([html], {type:'text/html;charset=utf-8'}), outName: replaceExt(file.name,'html'), previewType:'html', previewHtml: result.value};
+}
+async function txtToPdf(file){
+  await loadScript(LIBS.pdfLib);
+  const { PDFDocument, StandardFonts, rgb } = PDFLib;
+  const text = await file.text();
+  const pdf = await PDFDocument.create();
+  await stripPdfMetadata(pdf);
+  const font = await pdf.embedFont(StandardFonts.Helvetica);
+  const pageW = 595.28, pageH = 841.89, margin = 50;
+  const maxWidth = pageW - margin*2;
+  const fontSize = 11, lineHeight = fontSize * 1.5;
+  const lines = wrapText(text, maxWidth, font, fontSize);
+  let y = pageH - margin;
+  let page = pdf.addPage([pageW, pageH]);
+  for(const line of lines){
+    if(y < margin){ page = pdf.addPage([pageW, pageH]); y = pageH - margin; }
+    page.drawText(line, {x: margin, y, size: fontSize, font, color: rgb(0.1,0.13,0.2)});
+    y -= lineHeight;
+  }
+  const out = await pdf.save();
+  return {blob: new Blob([out], {type:'application/pdf'}), outName: replaceExt(file.name,'pdf'), previewType:'none'};
+}
+function wrapText(text, maxWidth, font, fontSize){
+  const paragraphs = text.split(/\r?\n/);
+  const result = [];
+  for(const para of paragraphs){
+    if(para === ''){ result.push(''); continue; }
+    let line = '';
+    for(const ch of para){
+      const test = line + ch;
+      try{ const w = font.widthOfTextAtSize(test, fontSize); if(w > maxWidth){ if(line) result.push(line); line = ch; } else line = test; }catch(e){ line = line + ch; }
+    }
+    if(line) result.push(line);
+  }
+  return result;
+}
+async function csvToJson(file){
+  const text = await file.text();
+  const lines = text.split(/\r?\n/).filter(l=>l.trim());
+  if(lines.length === 0) throw new Error('CSV empty');
+  const headers = parseCSVLine(lines[0]);
+  const data = lines.slice(1).map(line=>{ const cells = parseCSVLine(line); const obj = {}; headers.forEach((h,i)=>obj[h] = cells[i]||''); return obj; });
+  const json = JSON.stringify(data, null, 2);
+  return {blob: new Blob([json], {type:'application/json'}), outName: replaceExt(file.name,'json'), previewType:'text', previewText: json.slice(0,5000)};
+}
+function parseCSVLine(line){
+  const result = []; let cur = '', inQuote = false;
+  for(let i=0;i<line.length;i++){
+    const c = line[i];
+    if(c === '"'){ if(inQuote && line[i+1] === '"'){ cur+='"'; i++; } else inQuote = !inQuote; }
+    else if(c === ',' && !inQuote){ result.push(cur); cur = ''; }
+    else cur += c;
+  }
+  result.push(cur);
+  return result.map(s=>s.trim());
+}
+async function jsonToCsv(file){
+  const text = await file.text();
+  const data = JSON.parse(text);
+  const arr = Array.isArray(data) ? data : [data];
+  if(arr.length === 0) throw new Error('JSON empty');
+  const headers = Object.keys(arr[0]);
+  const lines = [headers.map(h=>csvCell(h)).join(',')];
+  for(const item of arr){ lines.push(headers.map(h=>csvCell(String(item[h] ?? ''))).join(',')); }
+  const csv = '\uFEFF' + lines.join('\n');
+  return {blob: new Blob([csv], {type:'text/csv;charset=utf-8'}), outName: replaceExt(file.name,'csv'), previewType:'text', previewText: csv.slice(0,5000)};
+}
+function csvCell(s){ if(/[",\n\r]/.test(s)) return '"'+s.replace(/"/g,'""')+'"'; return s; }
+async function jsonFormat(file, minify){
+  const text = await file.text();
+  const data = JSON.parse(text);
+  const out = minify ? JSON.stringify(data) : JSON.stringify(data, null, 2);
+  return {blob: new Blob([out], {type:'application/json'}), outName: file.name, previewType:'text', previewText: out.slice(0,5000)};
+}
+async function mdToHtml(file){
+  const text = await file.text();
+  const html = mdConvert(text);
+  const fullHtml = `<!DOCTYPE html><html><head><meta charset="UTF-8"><title>${escapeHtml(file.name)}</title></head><body>${html}</body></html>`;
+  return {blob: new Blob([fullHtml], {type:'text/html;charset=utf-8'}), outName: replaceExt(file.name,'html'), previewType:'html', previewHtml: html};
+}
+function mdConvert(src){
+  let html = escapeHtml(src);
+  html = html.replace(/```([\s\S]*?)```/g, (m,p)=>`<pre><code>${p}</code></pre>`);
+  html = html.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  html = html.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+  html = html.replace(/^# (.+)$/gm, '<h1>$1</h1>');
+  html = html.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  html = html.replace(/\*(.+?)\*/g, '<em>$1</em>');
+  html = html.replace(/`([^`]+)`/g, '<code>$1</code>');
+  html = html.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  html = html.replace(/(^|\n)(?:- (.+)(?:\n|$))+/g, (m)=>{ const items = m.trim().split(/\n/).map(l=>l.replace(/^- /,'')); return `\n<ul>${items.map(it=>`<li>${it}</li>`).join('')}</ul>\n`; });
+  html = html.split(/\n\n+/).map(p=>{ if(/^<(h\d|ul|pre)/.test(p)) return p; return '<p>'+p.replace(/\n/g,'<br>')+'</p>'; }).join('\n');
+  return html;
+}
+async function htmlToPdf(file){
+  await loadScript(LIBS.pdfLib);
+  const { PDFDocument, StandardFonts, rgb } = PDFLib;
+  const html = await file.text();
+  const tmp = document.createElement('div');
+  tmp.innerHTML = html;
+  const text = tmp.textContent || '';
+  const pdf = await PDFDocument.create();
+  await stripPdfMetadata(pdf);
+  const font = await pdf.embedFont(StandardFonts.Helvetica);
+  const pageW = 595.28, pageH = 841.89, margin = 50;
+  const maxWidth = pageW - margin*2;
+  const fontSize = 11, lineHeight = fontSize * 1.5;
+  const lines = wrapText(text, maxWidth, font, fontSize);
+  let y = pageH - margin;
+  let page = pdf.addPage([pageW, pageH]);
+  for(const line of lines){
+    if(y < margin){ page = pdf.addPage([pageW, pageH]); y = pageH - margin; }
+    page.drawText(line, {x: margin, y, size: fontSize, font, color: rgb(0.1,0.13,0.2)});
+    y -= lineHeight;
+  }
+  const out = await pdf.save();
+  return {blob: new Blob([out], {type:'application/pdf'}), outName: replaceExt(file.name,'pdf'), previewType:'none'};
+}
+function replaceExt(name, newExt){ const dotIdx = name.lastIndexOf('.'); const base = dotIdx > 0 ? name.slice(0, dotIdx) : name; return base + '.' + newExt; }
+
+async function convertOne(id){
+  const item = queue.find(q=>q.id===id);
+  if(!item) return;
+  if(item.status === 'processing') return;
+  item.status = 'processing'; renderQueue();
+  await doConvert(item);
+  item.status = item.result ? 'done' : (item._skipped ? 'pending' : 'error');
+  if(item._skipped) item._skipped = false;
+  renderQueue();
+}
+async function convertAll(){
+  const pending = queue.filter(q=>q.status === 'pending');
+  if(pending.length === 0){ toast(t('toastNoPending'), 'info', 1500); return; }
+  for(const item of pending){
+    if(item.status !== 'pending') continue;
+    item.status = 'processing'; renderQueue();
+    await doConvert(item);
+    item.status = item.result ? 'done' : (item._skipped ? 'pending' : 'error');
+    if(item._skipped) item._skipped = false;
+    renderQueue();
+  }
+  const ok = queue.filter(q=>q.status==='done').length;
+  toast(`${t('toastAllDone')} ${ok}/${pending.length} ${t('toastFilesUnit')}`, ok === pending.length ? 'success' : 'warn');
+}
+async function doConvert(item){
+  const {file, info, target} = item;
+  try{
+    showProgress(t('convertingFile', file.name), 10);
+    let result = null;
+    pulseProgress(t('convertingFile', file.name));
+    switch(info.kind){
+      case 'image':
+        if(target === 'pdf') result = await imageToPdf(file);
+        else if(target === 'ocr') result = await ocrImage(file);
+        else if(target === 'searchablePdf') result = await imageToSearchablePdf(file);
+        else if(target.startsWith('compress') || ['png','jpg','webp','compare'].includes(target)){
+          result = await convertImage(file, target, info);
+          if(result === null){ stopPulse(); doneProgress(false); item._skipped = true; return; }
+        }
+        break;
+      case 'pdf':
+        if(target === 'images') result = await pdfToImages(file, false);
+        else if(target === 'text') result = await pdfToText(file);
+        else if(target === 'png') result = await pdfToImages(file, true);
+        else if(target === 'ocr') result = await pdfOcr(file);
+        break;
+      case 'doc': result = await docxConvert(file, target); break;
+      case 'txt':
+        if(target === 'pdf') result = await txtToPdf(file);
+        else if(target === 'md2html') result = await mdToHtml(file);
+        break;
+      case 'csv':
+        if(target === 'json') result = await csvToJson(file);
+        else if(target === 'pdf') result = await txtToPdf(file);
+        break;
+      case 'json':
+        if(target === 'format') result = await jsonFormat(file, false);
+        else if(target === 'minify') result = await jsonFormat(file, true);
+        else if(target === 'csv') result = await jsonToCsv(file);
+        break;
+      case 'md':
+        if(target === 'html') result = await mdToHtml(file);
+        else if(target === 'pdf'){
+          const htmlRes = await mdToHtml(file);
+          const tmpBlob = new Blob([htmlRes.previewHtml], {type:'text/html'});
+          const tmpFile = new File([tmpBlob], 'tmp.html', {type:'text/html'});
+          result = await htmlToPdf(tmpFile);
+        }
+        break;
+      case 'html': if(target === 'pdf') result = await htmlToPdf(file); break;
+    }
+    stopPulse();
+    if(result){
+      if(result._previewUrl) result.previewType = 'image';
+      showProgress(t('progressDone'), 100);
+      const r = {
+        sourceName: file.name, outName: result.outName, blob: result.blob, type: result.blob.type,
+        previewType: result.previewType || 'none',
+        previewUrls: result.previewUrls || [],
+        previewText: result.previewText || '',
+        previewHtml: result.previewHtml || '',
+        savedBytes: result.savedBytes || 0,
+        compareData: result.compareData || null,
+        recommendIdx: result.recommendIdx || 0,
+        ocrStats: result.ocrStats || null
+      };
+      addResult(r); item.result = r;
+      doneProgress(true);
+      toast(`✓ ${file.name} ${t('toastDone')}`, 'success', 2000);
+    } else { doneProgress(false); toast(t('toastNotRecognized'), 'warn'); }
+  }catch(err){
+    stopPulse();
+    console.error('Convert failed:', err);
+    doneProgress(false);
+    item.result = null;
+    toast(`✕ ${t('toastFailed')}: ${formatErrorMessage(err)}`, 'error', 5000);
+  }
+}
+async function mergeAllPdfs(){
+  const pdfs = queue.filter(q=>q.info.kind==='pdf').map(q=>q.file);
+  if(pdfs.length < 2){ toast(t('toastNeedTwoPdf'), 'warn'); return; }
+  try{
+    showProgress(t('mergeProgress', 1, pdfs.length), 10);
+    pulseProgress(t('mergeProgress', 1, pdfs.length));
+    const result = await mergePdfs(pdfs);
+    stopPulse(); showProgress(t('progressDone'), 100);
+    addResult({sourceName: t('pdfSourcesLabel', pdfs.length), outName: result.outName, blob: result.blob, type:'application/pdf', previewType:'none', savedBytes:0});
+    doneProgress(true);
+    toast(`✓ ${t('toastMerged')} ${pdfs.length} PDFs`, 'success');
+  }catch(err){
+    stopPulse(); doneProgress(false);
+    toast(`${t('toastMergeFailed')}: ${err.message}`, 'error');
+  }
+}
+
+const wfSteps = [];
+let wfId = 0;
+let wfDragSrc = null;
+function wfAddStep(){
+  const type = document.getElementById('wfAddType').value;
+  wfSteps.push({id: ++wfId, type});
+  renderWorkflow();
+}
+function wfRemoveStep(id){
+  const i = wfSteps.findIndex(s=>s.id===id);
+  if(i>=0) wfSteps.splice(i, 1);
+  renderWorkflow();
+}
+function wfMove(fromId, toId){
+  const fromIdx = wfSteps.findIndex(s=>s.id===fromId);
+  const toIdx = wfSteps.findIndex(s=>s.id===toId);
+  if(fromIdx<0 || toIdx<0 || fromIdx===toIdx) return;
+  const [moved] = wfSteps.splice(fromIdx, 1);
+  wfSteps.splice(toIdx, 0, moved);
+  renderWorkflow();
+}
+function wfStepLabel(type){
+  return t('wfStep'+type.charAt(0).toUpperCase()+type.slice(1));
+}
+function renderWorkflow(){
+  const container = document.getElementById('wfSteps');
+  if(wfSteps.length === 0){
+    container.innerHTML = `<div class="wf-empty">${t('wfEmpty')}</div>`;
+    return;
+  }
+  container.innerHTML = wfSteps.map((s, i)=>{
+    return `
+    <div class="wf-step" draggable="true" data-id="${s.id}">
+      <div class="drag-handle" title="drag">⋮⋮</div>
+      <div class="step-body">
+        <span class="step-num">${i+1}</span>
+        <span class="step-type">${escapeHtml(wfStepLabel(s.type))}</span>
+      </div>
+      <button class="step-del" onclick="wfRemoveStep(${s.id})">✕</button>
+    </div>`;
+  }).join('');
+  container.querySelectorAll('.wf-step').forEach(el=>{
+    el.addEventListener('dragstart', e=>{
+      wfDragSrc = parseInt(el.dataset.id);
+      el.classList.add('dragging');
+      e.dataTransfer.effectAllowed = 'move';
+    });
+    el.addEventListener('dragend', ()=>{ el.classList.remove('dragging'); });
+    el.addEventListener('dragover', e=>{ e.preventDefault(); e.dataTransfer.dropEffect = 'move'; });
+    el.addEventListener('drop', e=>{
+      e.preventDefault();
+      const toId = parseInt(el.dataset.id);
+      if(wfDragSrc && toId && wfDragSrc !== toId){ wfMove(wfDragSrc, toId); }
+      wfDragSrc = null;
+    });
+  });
+}
+async function wfExecuteStep(step, fileObj){
+  const {file, info} = fileObj;
+  let result;
+  switch(step.type){
+    case 'compress': result = await convertImage(file, 'compressMid', info); break;
+    case 'toPng': result = await convertImage(file, 'png', info); break;
+    case 'toJpg': result = await convertImage(file, 'jpg', info); break;
+    case 'toWebp': result = await convertImage(file, 'webp', info); break;
+    case 'toPdf':
+      if(info.kind === 'image') result = await imageToPdf(file);
+      else if(info.kind === 'txt' || info.kind === 'csv') result = await txtToPdf(file);
+      else if(info.kind === 'md'){ const h = await mdToHtml(file); result = await htmlToPdf(new File([new Blob([h.previewHtml], {type:'text/html'})], 'tmp.html')); }
+      else throw new Error('unsupported for →PDF: '+info.kind);
+      break;
+    case 'pdfToImages':
+      if(info.kind !== 'pdf') throw new Error('PDF→images requires PDF input');
+      result = await pdfToImages(file, false);
+      break;
+    case 'ocr':
+      if(info.kind === 'image') result = await ocrImage(file);
+      else if(info.kind === 'pdf') result = await pdfOcr(file);
+      else throw new Error('OCR requires image or PDF');
+      break;
+    case 'clearMeta':
+      if(info.kind === 'image'){
+        const bitmap = await loadImage(file);
+        const blob = await canvasToBlob(bitmap, file.type || 'image/png', 0.92, info.ext==='png'||info.ext==='webp');
+        result = {blob, outName: file.name, previewType:'image'};
+      } else if(info.kind === 'pdf'){
+        await loadScript(LIBS.pdfLib);
+        const { PDFDocument } = PDFLib;
+        const bytes = new Uint8Array(await file.arrayBuffer());
+        const pdf = await PDFDocument.load(bytes);
+        await stripPdfMetadata(pdf);
+        const out = await pdf.save();
+        result = {blob: new Blob([out], {type:'application/pdf'}), outName: file.name, previewType:'none'};
+      } else {
+        result = {blob: file, outName: file.name, previewType:'none'};
+      }
+      break;
+    default: throw new Error('unknown step: '+step.type);
+  }
+  if(!result) return null;
+  const newFile = new File([result.blob], result.outName, {type: result.blob.type});
+  const newInfo = getFileKind(newFile);
+  return {file: newFile, info: newInfo, lastResult: result};
+}
+async function wfRun(){
+  if(wfSteps.length === 0){ toast(t('toastWorkflowEmpty'), 'warn'); return; }
+  if(queue.length === 0){ toast(t('toastWfNoFiles'), 'warn'); return; }
+  const btn = document.getElementById('wfRunBtn');
+  btn.disabled = true; btn.textContent = t('wfRunning');
+  try{
+    let currentFiles = queue.map(q=>({file: q.file, info: q.info}));
+    for(let si=0; si<wfSteps.length; si++){
+      const step = wfSteps[si];
+      showProgress(`${t('toastWfStep', si+1)}: ${wfStepLabel(step.type)}…`, ((si)/wfSteps.length)*100);
+      const next = [];
+      for(let fi=0; fi<currentFiles.length; fi++){
+        const fo = currentFiles[fi];
+        try{
+          const out = await wfExecuteStep(step, fo);
+          if(out) next.push({file: out.file, info: out.info, lastResult: out.lastResult});
+          showProgress(`${t('toastWfStep', si+1)}: ${wfStepLabel(step.type)} (${fi+1}/${currentFiles.length})`, ((si+fi/currentFiles.length)/wfSteps.length)*100);
+        }catch(e){
+          toast(`${fo.file.name}: ${e.message}`, 'error', 4000);
+        }
+      }
+      currentFiles = next;
+      await yield_();
+    }
+    for(const fo of currentFiles){
+      if(fo.lastResult){
+        addResult({
+          sourceName: fo.file.name,
+          outName: fo.lastResult.outName,
+          blob: fo.lastResult.blob,
+          type: fo.lastResult.blob.type,
+          previewType: fo.lastResult.previewType || 'none',
+          previewUrls: fo.lastResult.previewUrls || [],
+          previewText: fo.lastResult.previewText || '',
+          previewHtml: fo.lastResult.previewHtml || '',
+          savedBytes: fo.lastResult.savedBytes || 0,
+          compareData: fo.lastResult.compareData || null,
+          recommendIdx: fo.lastResult.recommendIdx || 0
+        });
+      }
+    }
+    doneProgress(true);
+    toast(t('toastWorkflowDone'), 'success');
+  }catch(err){
+    stopPulse(); doneProgress(false);
+    toast(`${t('toastFailed')}: ${err.message}`, 'error');
+  }finally{
+    btn.disabled = false;
+    btn.textContent = t('wfRun');
+  }
+}
+
+function switchMode(mode){
+  const single = document.getElementById('panelSingle');
+  const wf = document.getElementById('panelWorkflow');
+  const b1 = document.getElementById('modeSingle');
+  const b2 = document.getElementById('modeWorkflow');
+  if(mode === 'workflow'){ single.classList.remove('active'); wf.classList.add('active'); b1.classList.remove('active'); b2.classList.add('active'); }
+  else { wf.classList.remove('active'); single.classList.add('active'); b2.classList.remove('active'); b1.classList.add('active'); }
+}
+
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+fileInput.addEventListener('change', e=>{ Array.from(e.target.files).forEach(addFile); fileInput.value = ''; });
+['dragenter','dragover'].forEach(ev=>{ dropZone.addEventListener(ev, e=>{ e.preventDefault(); e.stopPropagation(); dropZone.classList.add('dragover'); }); });
+['dragleave','drop'].forEach(ev=>{ dropZone.addEventListener(ev, e=>{ e.preventDefault(); e.stopPropagation(); dropZone.classList.remove('dragover'); }); });
+dropZone.addEventListener('drop', e=>{ Array.from(e.dataTransfer.files).forEach(addFile); });
+['dragover','drop'].forEach(ev=>{ window.addEventListener(ev, e=>{ if(e.target !== dropZone && !dropZone.contains(e.target)){ e.preventDefault(); } }); });
+
+// 粘贴上传：监听全局 paste，如果剪贴板有图片直接添加到队列
+document.addEventListener('paste', e=>{
+  const items = e.clipboardData && e.clipboardData.items;
+  if(!items) return;
+  for(let i=0; i<items.length; i++){
+    const item = items[i];
+    if(!item.type || !item.type.startsWith('image/')) continue;
+    const file = item.getAsFile();
+    if(!file) continue;
+    e.preventDefault();
+    // 给粘贴的截图生成带时间戳的文件名
+    const ext = (file.type.split('/')[1] || 'png').replace('jpeg','jpg');
+    const ts = new Date().toISOString().replace(/[:.]/g,'-').slice(0,19);
+    const named = new File([file], `paste_${ts}.${ext}`, {type: file.type});
+    addFile(named);
+    break;
+  }
+});
+
+document.getElementById('langZh').addEventListener('click', ()=>applyI18n('zh'));
+document.getElementById('langEn').addEventListener('click', ()=>applyI18n('en'));
+document.getElementById('modeSingle').addEventListener('click', ()=>switchMode('single'));
+document.getElementById('modeWorkflow').addEventListener('click', ()=>switchMode('workflow'));
+
+// 反馈功能
+const FEEDBACK_EMAIL = 'https://github.com/ThisNameAlreadyExists/tool-station/issues';
+function showFeedback(){
+  const zh = LANG === 'zh';
+  document.getElementById('fbTitle').textContent = zh ? '提交反馈' : 'Send Feedback';
+  document.getElementById('fbDesc').textContent = zh ? '遇到问题或有新需求？点击确认将打开 GitHub Issues 提交反馈。' : 'Found a bug or have a feature request? Click confirm to open GitHub Issues.';
+  document.getElementById('fbConfirm').textContent = zh ? '打开 Issues' : 'Open Issues';
+  document.getElementById('fbCancel').textContent = zh ? '取消' : 'Cancel';
+  document.getElementById('feedbackModal').classList.add('active');
+}
+function closeFeedback(){ document.getElementById('feedbackModal').classList.remove('active'); }
+function copyFeedbackEmail(){
+  const zh = LANG === 'zh';
+  try {
+    navigator.clipboard.writeText(FEEDBACK_EMAIL).then(()=>{
+      toast(zh ? '邮箱已复制' : 'Email copied', 'success', 2000);
+    }).catch(()=>{
+      // 降级：用 execCommand
+      const ta = document.createElement('textarea');
+      ta.value = FEEDBACK_EMAIL; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); ta.remove();
+      toast(zh ? '邮箱已复制' : 'Email copied', 'success', 2000);
+    });
+  } catch(e){
+    toast(zh ? '复制失败，请手动选择' : 'Copy failed', 'warn', 2000);
+  }
+}
+function sendFeedback(){
+  const zh = LANG === 'zh';
+  closeFeedback();
+  try {
+    window.open(FEEDBACK_EMAIL, '_blank', 'noopener');
+    setTimeout(()=>{
+      toast(zh ? '如未自动打开，可点反馈按钮复制链接手动访问' : 'If not opened, click feedback button to copy link', 'info', 6000);
+    }, 2000);
+  } catch(e){
+    toast(zh ? '打开失败，可复制链接手动访问' : 'Failed to open, copy link manually', 'warn', 6000);
+  }
+}
+
+function init(){
+  let lang = localStorage.getItem('cm-lang');
+  if(!lang){ const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase(); lang = navLang.startsWith('zh') ? 'zh' : 'en'; }
+  applyI18n(lang);
+  renderWorkflow();
+  toast(t('toastWelcome'), 'info', 4000);
+  // 页面加载后 5 秒开始后台预加载 OCR 模型（不阻塞用户操作）
+  setTimeout(preloadOcr, 5000);
+}
+
+window.addFile = addFile;
+window.removeFile = removeFile;
+window.clearQueue = clearQueue;
+window.setTarget = setTarget;
+window.convertOne = convertOne;
+window.convertAll = convertAll;
+window.downloadAll = downloadAll;
+window.clearResults = clearResults;
+window.mergeAllPdfs = mergeAllPdfs;
+window.wfAddStep = wfAddStep;
+window.wfRemoveStep = wfRemoveStep;
+window.wfRun = wfRun;
+window.showFeedback = showFeedback;
+window.closeFeedback = closeFeedback;
+window.sendFeedback = sendFeedback;
+window.copyFeedbackEmail = copyFeedbackEmail;
+
+init();
+</script>
+</body>
+</html>

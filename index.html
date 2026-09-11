@@ -86,6 +86,12 @@
   footer a{color:var(--ink-2);text-decoration:none}
   footer a:hover{color:var(--brand)}
   footer .sep{margin:0 8px;color:var(--line)}
+  .wechat-qr{position:relative;display:inline-block;cursor:pointer}
+  .wechat-qr-popup{position:absolute;bottom:calc(100% + 8px);left:50%;transform:translateX(-50%) scale(.85);transform-origin:bottom center;opacity:0;visibility:hidden;transition:all .18s ease;background:var(--card);padding:10px;border-radius:10px;box-shadow:0 8px 24px rgba(20,40,80,.18);text-align:center;width:140px;border:1px solid var(--line)}
+  .wechat-qr-popup::after{content:"";position:absolute;top:100%;left:50%;transform:translateX(-50%);border:6px solid transparent;border-top-color:var(--card)}
+  .wechat-qr-popup img{width:120px;height:120px;display:block;border-radius:4px}
+  .wechat-qr-popup .qr-tip{display:block;font-size:12px;color:var(--ink-2);margin-top:6px;font-weight:500}
+  .wechat-qr:hover .wechat-qr-popup,.wechat-qr.show .wechat-qr-popup{opacity:1;visibility:visible;transform:translateX(-50%) scale(1)}
 </style>
 </head>
 <body data-page-node-id="8jk4cC8a8CUU2q0bePXLsi">
@@ -129,7 +135,7 @@
     </div>
   </main>
   <footer data-page-node-id="5QwKqWmXp3pJTIXlRr1StC">
-    <a href="https://sanzhigouzi.com/" data-i18n="companyLink" data-page-node-id="company-link">Company</a><span class="sep" data-page-node-id="W3e357UyTSO67tKh6ga8es">·</span><a href="https://github.com/ThisNameAlreadyExists/tool-station/issues" target="_blank" rel="noopener" data-i18n="feedback" data-page-node-id="qKSDlMtbir1gDQa92Hu31w">Feedback</a><span class="sep" data-page-node-id="W3e357UyTSO67tKh6ga8es2">·</span><span data-i18n="footerNote" data-page-node-id="FiFMhxALfVI35ZliUHPb4b">All processing happens locally in your browser, files never leave your device</span>
+    <a href="https://sanzhigouzi.com/" data-i18n="companyLink" data-page-node-id="company-link">Company</a><span class="sep" data-page-node-id="W3e357UyTSO67tKh6ga8es">·</span><span class="wechat-qr" onclick="toggleWechatQR(this)" data-page-node-id="wechat-wrap"><a href="javascript:void(0)" data-i18n="wechatLink" data-page-node-id="wechat-link">WeChat</a><span class="wechat-qr-popup" data-page-node-id="wechat-popup"><img src="qrcode.jpg" alt="在思谦IT 公众号二维码" data-page-node-id="wechat-img"><span class="qr-tip" data-i18n="wechatQRTip" data-page-node-id="wechat-tip">扫码关注</span></span></span><span class="sep" data-page-node-id="W3e357UyTSO67tKh6ga8es2">·</span><a href="https://github.com/ThisNameAlreadyExists/tool-station/issues" target="_blank" rel="noopener" data-i18n="feedback" data-page-node-id="qKSDlMtbir1gDQa92Hu31w">Feedback</a><span class="sep" data-page-node-id="W3e357UyTSO67tKh6ga8es3">·</span><span data-i18n="footerNote" data-page-node-id="FiFMhxALfVI35ZliUHPb4b">All processing happens locally in your browser, files never leave your device</span>
   </footer>
 <script>
   const i18n={
@@ -150,6 +156,8 @@
       badge3:"已上线",
       feedback:"反馈建议",
       companyLink:"公司官网",
+      wechatLink:"公众号",
+      wechatQRTip:"扫码关注",
       footerNote:"所有处理在浏览器本地完成，文件不上传服务器",
       langBtn:"EN"
     },
@@ -170,6 +178,8 @@
       badge3:"Live",
       feedback:"Feedback",
       companyLink:"Company",
+      wechatLink:"WeChat",
+      wechatQRTip:"Scan to follow",
       footerNote:"All processing happens locally in your browser, files never leave your device",
       langBtn:"中文"
     }
@@ -195,6 +205,14 @@
     localStorage.setItem('san-tools-lang',lang);
   }
   function toggleLang(){applyLang(currentLang==='zh'?'en':'zh');}
+  function toggleWechatQR(el){
+    el.classList.toggle('show');
+    setTimeout(()=>{
+      document.addEventListener('click',function close(e){
+        if(!el.contains(e.target)){el.classList.remove('show');document.removeEventListener('click',close);}
+      },{once:true});
+    },0);
+  }
   applyLang(detectLang());
 </script>
 </body>

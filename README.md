@@ -14,13 +14,14 @@
 
 ## 📦 What's Inside
 
-Three independent static sites, each in its own folder:
+Four independent static sites, each in its own folder:
 
 | Path | Tool | What it does |
 |------|------|--------------|
 | `/` | **Portal** | A landing hub linking to all tools below. |
 | `/calculator/` | **Calculator** | Loan repayment calculator with full amortization schedule (equal-payment & equal-principal). |
 | `/convert-master/` | **ConvertMaster** | One-stop local file converter — images, PDFs, documents, data formats, OCR. |
+| `/generator/` | **Generator** | QR code, password, color palette, UUID generators — all client-side. |
 
 ✨ Every tool runs **100% in your browser** — no server uploads, no tracking, no logins.
 
